@@ -1,10 +1,11 @@
 import React from 'react';
-
+import Header from '../Component/Header.js';
+<Header/>
 function Home() {
   return (
-    <>
-      <div className='h1'>Index</div>
-    </>
+    <div className="container-fluid">
+      <div className='text-danger'>Index</div>
+    </div>
   );
 }
 

@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App';
+import App from './App';
+import './assets/scss/main.scss';
 import reportWebVitals from './reportWebVitals';
 import Home from './Layout/Home';
 ReactDOM.render(
   <>
+  <App />
   <Home />
-    {/* <App /> */}
   </>,
   document.getElementById('root')
 );
