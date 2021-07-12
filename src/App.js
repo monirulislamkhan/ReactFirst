@@ -1,7 +1,8 @@
+import Home from './Layout/Home';
 function App() {
   return (
     <>
-      <div className='h1'>React Js</div>
+      <Home />
     </>
   );
 }
