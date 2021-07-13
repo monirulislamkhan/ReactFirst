@@ -1,0 +1,173 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  z-index: 999;
+  &.scrolled {
+    background-color: $theme1;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 0px;
+  }
+  nav {
+    clear: both;
+    display: block;
+    line-height: 60px;
+    height: 60px;
+    position: relative;
+  }
+  a {
+    color: $white;
+  }
+}
+
+.menu-container {
+  padding: 0.2rem 1rem;
+}
+
+.grt-menu-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .grt-logo {
+    display: inline-block;
+    img {
+      max-height: 60px;
+      width: auto;
+    }
+  }
+}
+
+.inner_header {
+  @extend .scrolled;
+}
+
+.grt-mobile-button {
+  display: none;
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+}
+
+.body-overflow {
+  overflow: hidden;
+}
+
+.grt-menu {
+  display: block;
+  float: right;
+  margin: 0 -10px 0 0;
+  padding: 0;
+  list-style-type: none;
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    a {
+      padding: 0.5rem 0.7rem;
+      display: inline-block;
+      line-height: 1.1em;
+      position: relative;
+      text-decoration: none;
+      &.active {
+        position: relative;
+        color: $theme2;
+        &::after {
+          position: absolute;
+          bottom: -1.05rem;
+          left: 0.6rem;
+          right: 0.6rem;
+          width: calc(100% - 1.1rem);
+          height: 2px;
+          border: $theme2 solid 2px;
+          content: '';
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .grt-mobile-button {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    width: 35px;
+    background-color: transparent;
+  }
+
+  .grt-mobile-button .line1,
+  .grt-mobile-button .line2,
+  .grt-mobile-button .line3 {
+    width: 35px;
+    height: 4px;
+    background-color: $white;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    transition: 0.4s;
+    display: block;
+  }
+
+  .grt-menu {
+    display: none;
+    margin: 0;
+    height: 0;
+  }
+
+  .open-grt-menu {
+    position: fixed;
+    background: $theme1;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    float: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .grt-mobile-button-open {
+    position: fixed;
+    z-index: 99999;
+    right: 15px;
+    top: 15px;
+  }
+
+  .grt-mobile-button-open .line1 {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+
+  .grt-mobile-button-open .line2 {
+    opacity: 0;
+  }
+
+  .grt-mobile-button-open .line3 {
+    transform: rotate(45deg) translate(-8px, -7px);
+  }
+}
