@@ -1,6 +1,7 @@
 import Header from '../Component/Header';
+import ProjectForm from '../Component/MainForm';
+import Wedelever from '../Component/WeDeliver';
 import Footer from '../Component/Footer';
-import ProjectForm from '../Component/ProjectForm';
 function Home() {
   return (
     <>
@@ -30,6 +31,7 @@ function Home() {
                 <div className="ftr_phone"><a href="tel:+9811999666"> <i className="fas fa-phone-alt"></i>+91 98 1199 9666</a></div>
                 <div className="contact_heading">Get in touch with us!</div>
                 <ProjectForm />
+                <Wedelever />
               </div>
             </div>
           </div>
@@ -236,7 +238,6 @@ function Home() {
           </div>
         </div>
       </section>
-
       <Footer />
     </>
   );

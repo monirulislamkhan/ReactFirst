@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './assets/scss/main.scss';
+// import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import reportWebVitals from './reportWebVitals';
 ReactDOM.render(<App />, document.getElementById('root'));
 
