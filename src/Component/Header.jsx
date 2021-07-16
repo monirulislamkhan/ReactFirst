@@ -1,29 +1,34 @@
-function Header() {
+const Header = () => {
   return (
-  <header id="mainNav">
-    <div className="menu-container">
-      <div className="grt-menu-row">
-        <div className="grt-menu-logo">
-          <a href="/some/valid/uri" className="grt-logo">
-            <img src="assets/images/logo.svg" className="img-fluid" alt="Logo" />
-          </a>
-        </div>
-        <div className="grt-menu-right">
-          <nav>
-            <button className="grt-mobile-button"><span className="line1"></span><span className="line2"></span><span className="line3"></span></button>
-            <ul className="grt-menu">
-              <li><a href="#top-pg" className="nav-link js-scroll-trigger">Home</a></li>
-              <li><a href="#despc" className="nav-link js-scroll-trigger">Overview</a></li>
-              <li><a href="#priceId" className="nav-link js-scroll-trigger">Price List</a></li>
-              <li><a href="#amentiId" className="nav-link js-scroll-trigger">Amenities</a></li>
-              <li><a href="#locationId" className="nav-link js-scroll-trigger">Location</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-          </nav>
+    <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="/">Navbar</a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li className="nav-item"><a className="nav-link " href="/">Home</a></li>
+            <li className="nav-item"><a className="nav-link" href="/specifications.html">Specifications</a></li>
+            <li className="nav-item"><a className="nav-link" href="/price-list.html">Price List</a></li>
+            <li className="nav-item"><a className="nav-link" href="/location-map.html">Location Map</a></li>
+            <li className="nav-item"><a className="nav-link" href="/master-plan.html">Master Plan</a></li>
+            <li className="nav-item"><a className="nav-link" href="/floor-plan.html">Floor Plan</a></li>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="/#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gallery</a>
+              <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a className="dropdown-item" href="/elevation-images.html">Elevation Images</a></li>
+                <li><a className="dropdown-item" href="/construction-update.html">Construction Update</a></li>
+                <li><a className="dropdown-item" href="/sample-flat.html">Sample Flat</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-</header>
-  );
+    </nav>
+
+  )
 }
+
 export default Header;

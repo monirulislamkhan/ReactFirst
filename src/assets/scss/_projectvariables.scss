@@ -1,4 +1,4 @@
-$body-bg: #fff; // Background Color
+/* $body-bg: #fff; // Background Color
 // $body-color: #1d1d33; // body content color
 $theme-colors: (
   'primary': #a29472
@@ -7,4 +7,17 @@ $theme1: #192b41;
 $theme2: #a29472;
 $theme3: #3c3c3b;
 
-$shadowbox: 0 1rem 3rem rgba($theme1, 0.275);
+$shadowbox: 0 1rem 3rem rgba($theme1, 0.275); */
+
+$body-bg: #f2f2f3; // Background Color
+$theme-colors: (
+  primary: #d1a659,
+); // Site Theme Color
+$body-color: #383838; // body content color
+$theme-bgcolor: #d1a659;
+$theme-bg-light: #fcf9ef;
+$theme-bg-secondary: #e4e1d2;
+$theme-bg-black: #231f20;
+$border-primary: #dfe3ee;
+$input-border-color: #dcdcdc; // form-control border color
+$input-height: 2.7rem; // form-control height
