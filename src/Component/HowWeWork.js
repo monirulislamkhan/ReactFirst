@@ -1,3 +1,4 @@
+import React from 'react';
 const HowWeWork = () => {
   let H1 = 'Sobha City Gurgaon';
   return (

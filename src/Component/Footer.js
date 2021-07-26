@@ -1,4 +1,5 @@
-import ProjectForm from '../Component/MainForm';
+import React from 'react';
+import ProjectForm from './MainForm';
 // const currentYear = document.getElementById('currentYear').innerHTML = new Date().getFullYear;
 // const currentYear = new Date().getFullYear;
 const Footer = () => {
