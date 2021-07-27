@@ -3,7 +3,8 @@ import Header from '../Component/Header';
 import Banner from '../Component/Banner';
 import ProjectForm from '../Component/MainForm';
 import PriceList from '../Component/Prices';
-// import HowWeWork from '../Component/HowWeWork';
+import HowWeWork from '../Component/HowWeWork';
+import { Link } from "react-router-dom";
 // import Wedelever from '../Component/WeDeliver';
 import Footer from '../Component/Footer';
 
@@ -11,7 +12,7 @@ const Home = (props) => {
   let H1 = 'Sobha City Gurgaon';
   let H2 = 'Sobha City Gurgaon Sector 108';
 
-  let article = '';
+  const article = '';
   const priceData = [
     {
       unittype: '2 BHK',
@@ -253,6 +254,8 @@ const Home = (props) => {
         </div>
       </section>
 
+
+
       <section className='consul_area'>
         <div className='container'>
           <div className='row no-gutters justify-content-lg-center'>
@@ -266,9 +269,9 @@ const Home = (props) => {
             </div>
             <div className='col-md-3'>
               <div className='consul__inner no_bdr'>
-                <a href='/' data-toggle='modal' data-target='#downloadForm'>
+                <Link to='#' className="stretched-link" data-bs-toggle="modal" data-bs-target="#downloadForm">
                   <i className='sym_download'></i>
-                </a>
+                </Link>
                 <strong>Download</strong>
                 <span>
                   Click here to download the latest information about the
@@ -292,6 +295,7 @@ const Home = (props) => {
                 <a href='/' data-toggle='modal' data-target='#SitevisitForm'>
                   <i className='sym_cab'></i>
                 </a>
+
                 <strong>Site Visit</strong>
                 <span>
                   Get A Deep Knowledge Of The Site With Our Executive.
@@ -394,7 +398,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-
+      <HowWeWork />
       <Footer />
     </>
   );

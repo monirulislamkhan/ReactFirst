@@ -20,7 +20,8 @@ const Header = (props) => {
         </button>
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
-            <li class={`nav-item active`}>
+            <li class={`nav-item ${props.location.pathname === "/" ? "active" : ""
+              }`}>
               <Link className='nav-link ' to='/'>
                 Home
               </Link>
@@ -91,5 +92,4 @@ const Header = (props) => {
     </nav>
   );
 };
-
-export default Header;
+export default withRouter(Header);

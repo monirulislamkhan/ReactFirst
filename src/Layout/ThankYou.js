@@ -4,7 +4,7 @@ import React from 'react';
 function Disclaimer() {
   return (
     <>
-      <div className='container'>Disclaimer</div>
+      <div className='container'>Thank You</div>
     </>
   );
 }
