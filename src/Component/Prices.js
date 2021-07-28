@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PriceList = (props) => {
+const Prices = (props) => {
   return (
     <div className='col-lg-3'>
       <div className='prclist'>
@@ -18,4 +18,4 @@ const PriceList = (props) => {
     </div>
   )
 }
-export default PriceList;
+export default Prices;

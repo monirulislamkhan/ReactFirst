@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Header from '../Component/Header';
 import Banner from '../Component/Banner';
 import ProjectForm from '../Component/MainForm';
-import PriceList from '../Component/Prices';
+import Prices from '../Component/Prices';
 import HowWeWork from '../Component/HowWeWork';
-import { Link } from "react-router-dom";
 // import Wedelever from '../Component/WeDeliver';
 import Footer from '../Component/Footer';
 
@@ -39,6 +39,44 @@ const Home = (props) => {
       price: '1.78'
     }
   ];
+  const first = '';
+  const weWorkpopUpAllContent = [
+    {
+      popUpId: 'downloadForm',
+      popUpContent: [<div className="h4"><i className="sym_download"></i> Download</div>, <p>Allow us to help you with more downloadable information. By filling this form you will get a mail with given below downloadable items:</p>, <ul>
+        <li>Master Plan</li>
+        <li>Floor Plan</li>
+        <li>Unit Plan</li>
+        <li>Location Map</li>
+      </ul>]
+    },
+    {
+      popUpId: 'consulForm',
+      popUpContent: [<div className="h4"><i className="sym_agent"></i> Consultant</div>, <p>We are trusted by buyers, builders, and sellers. We are an authorized channel partner for. </p>, <p>Here you will get the best advice on:-</p>, <ul>
+        <li>Unit facing, floor rise, and apartment type.</li>
+        <li>Home loan, down payment and payment plan.</li>
+        <li>Or any other questions in your mind. </li>
+      </ul>]
+    },
+    {
+      popUpId: 'SitevisitForm',
+      popUpContent: [<div className="h4"><i className="sym_agent"></i> Site Visit</div>, <p>The site visit is very important for homebuyers to enhance the understanding of real construction practice. With our doorstep site visit service you will get a deep understanding about:-</p>, <ul>
+        <li>Construction Quality</li>
+        <li>Actual sizes of the rooms</li>
+        <li>Site Area</li>
+        <li>Familiarity with neighborhood</li>
+      </ul>]
+    },
+    {
+      popUpId: 'BestdealForm',
+      popUpContent: [<div className="h4"><i className="sym_agent"></i> Best Deal</div>, <p>We know that you are here for the best deal and so we are. By filling this form you will get the best deals by:-</p>, <ul>
+        <li>Best Deals</li>
+        <li>Periodic/Festival Offers</li>
+        <li>Best unit in your budget</li>
+      </ul>]
+    }
+  ];
+
   return (
     <>
       <Header />
@@ -244,7 +282,7 @@ const Home = (props) => {
                 {
                   priceData.map((article, index) => {
                     return (
-                      <PriceList key={index} unittype={article.unittype} typename={article.typename} sizes={article.sizes} price={article.price} />
+                      <Prices key={index} unittype={article.unittype} typename={article.typename} sizes={article.sizes} price={article.price} />
                     );
                   })
                 }
@@ -258,7 +296,7 @@ const Home = (props) => {
 
       <section className='consul_area'>
         <div className='container'>
-          <div className='row no-gutters justify-content-lg-center'>
+          <div className='row gx-0 justify-content-lg-center'>
             <div className='col-lg-12'>
               <div className='h2 text-center'>How We works</div>
               <p className='text-center mb-4'>
@@ -281,9 +319,9 @@ const Home = (props) => {
             </div>
             <div className='col-md-3'>
               <div className='consul__inner'>
-                <a href='/' data-toggle='modal' data-target='#consulForm'>
+                <Link to='#' className="stretched-link" data-bs-toggle="modal" data-bs-target="#consulForm">
                   <i className='sym_agent'></i>
-                </a>
+                </Link>
                 <strong>Consultant</strong>
                 <span>
                   Consult With Our Dedicated Executives For Every Query In Mind.
@@ -292,9 +330,9 @@ const Home = (props) => {
             </div>
             <div className='col-md-3'>
               <div className='consul__inner'>
-                <a href='/' data-toggle='modal' data-target='#SitevisitForm'>
+                <Link to='#' className="stretched-link" data-bs-toggle='modal' data-bs-target='#SitevisitForm'>
                   <i className='sym_cab'></i>
-                </a>
+                </Link>
 
                 <strong>Site Visit</strong>
                 <span>
@@ -304,9 +342,9 @@ const Home = (props) => {
             </div>
             <div className='col-md-3'>
               <div className='consul__inner no_bdr'>
-                <a href='/' data-toggle='modal' data-target='#BestdealForm'>
+                <Link to='#' className="stretched-link" data-bs-toggle='modal' data-bs-target='#BestdealForm'>
                   <i className='sym_np-deals-offers'></i>
-                </a>
+                </Link>
                 <strong>Best Deal</strong>
                 <span>Enjoy Special Festive Or Seasonal Offers.</span>
               </div>
@@ -398,10 +436,17 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <HowWeWork />
+      {
+        weWorkpopUpAllContent.map((first, index) => {
+          return (
+            // <HowWeWork key={index} popUpId={first.popUpId} popUpContent={first.popUpContent} />
+            <HowWeWork key={index} popUpId='downloadForm' iconName='sym_download' iconValue='Download' Para='Allow us to help you with more downloadable information. By filling this form you will get a mail with given below downloadable items:' liLebel='Master Plan' liLebel='Floor Plan' />
+          );
+        })
+      }
       <Footer />
     </>
-  );
+  )
 };
 
 export default Home;
