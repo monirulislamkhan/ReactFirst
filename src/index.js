@@ -4,6 +4,7 @@ import App from './App';
 import './Assets/scss/main.scss';
 import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
+window.name = 'Sobha City Gurgaon';
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function

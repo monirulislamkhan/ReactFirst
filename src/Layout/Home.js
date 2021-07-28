@@ -4,14 +4,14 @@ import Header from '../Component/Header';
 import Banner from '../Component/Banner';
 import ProjectForm from '../Component/MainForm';
 import Prices from '../Component/Prices';
-import HowWeWork from '../Component/HowWeWork';
+import HowDownload from '../Component/HowDownload';
+import HowConsultant from '../Component/HowConsultant';
+import HowSiteVisit from '../Component/HowSiteVisit';
+import HowBestDeal from '../Component/HowBestDeal';
 // import Wedelever from '../Component/WeDeliver';
 import Footer from '../Component/Footer';
 
 const Home = (props) => {
-  let H1 = 'Sobha City Gurgaon';
-  let H2 = 'Sobha City Gurgaon Sector 108';
-
   const article = '';
   const priceData = [
     {
@@ -39,43 +39,6 @@ const Home = (props) => {
       price: '1.78'
     }
   ];
-  const first = '';
-  const weWorkpopUpAllContent = [
-    {
-      popUpId: 'downloadForm',
-      popUpContent: [<div className="h4"><i className="sym_download"></i> Download</div>, <p>Allow us to help you with more downloadable information. By filling this form you will get a mail with given below downloadable items:</p>, <ul>
-        <li>Master Plan</li>
-        <li>Floor Plan</li>
-        <li>Unit Plan</li>
-        <li>Location Map</li>
-      </ul>]
-    },
-    {
-      popUpId: 'consulForm',
-      popUpContent: [<div className="h4"><i className="sym_agent"></i> Consultant</div>, <p>We are trusted by buyers, builders, and sellers. We are an authorized channel partner for. </p>, <p>Here you will get the best advice on:-</p>, <ul>
-        <li>Unit facing, floor rise, and apartment type.</li>
-        <li>Home loan, down payment and payment plan.</li>
-        <li>Or any other questions in your mind. </li>
-      </ul>]
-    },
-    {
-      popUpId: 'SitevisitForm',
-      popUpContent: [<div className="h4"><i className="sym_agent"></i> Site Visit</div>, <p>The site visit is very important for homebuyers to enhance the understanding of real construction practice. With our doorstep site visit service you will get a deep understanding about:-</p>, <ul>
-        <li>Construction Quality</li>
-        <li>Actual sizes of the rooms</li>
-        <li>Site Area</li>
-        <li>Familiarity with neighborhood</li>
-      </ul>]
-    },
-    {
-      popUpId: 'BestdealForm',
-      popUpContent: [<div className="h4"><i className="sym_agent"></i> Best Deal</div>, <p>We know that you are here for the best deal and so we are. By filling this form you will get the best deals by:-</p>, <ul>
-        <li>Best Deals</li>
-        <li>Periodic/Festival Offers</li>
-        <li>Best unit in your budget</li>
-      </ul>]
-    }
-  ];
 
   return (
     <>
@@ -86,7 +49,7 @@ const Home = (props) => {
           <div className='row justify-content-center'>
             <div className='col-lg-12'>
               <div className='p_tit'>
-                <h1>{H1}</h1>
+                <h1>{window.name}</h1>
                 <div className='tit_tag'>
                   Spacious 3 Bedroom & Home Office Residences with incredible
                   benefits.
@@ -209,7 +172,7 @@ const Home = (props) => {
             </figure>
             <div className='col-lg-7'>
               <div className='des_heading text-start'>
-                <h2 className='mb-2'>{H2}</h2>
+                <h2 className='mb-2'>{`${window.name} Monirul`}</h2>
               </div>
               <p>
                 <strong>Sobha City Gurgaon</strong> – “Enjoy the life surrounded
@@ -242,7 +205,7 @@ const Home = (props) => {
             <figure className='col-lg-5 order-lg-1'>
               <img
                 src='images/overview-02.jpg'
-                alt={H1}
+                alt={window.name}
                 className='img-fluid'
               />
             </figure>
@@ -277,7 +240,7 @@ const Home = (props) => {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-12'>
-              <h2 className='text-lg-center mb-4'>{H1} - Price List</h2>
+              <h2 className='text-lg-center mb-4'>{window.name} - Price List</h2>
               <div className='row justify-content-center'>
                 {
                   priceData.map((article, index) => {
@@ -291,8 +254,6 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-
-
 
       <section className='consul_area'>
         <div className='container'>
@@ -308,7 +269,7 @@ const Home = (props) => {
             <div className='col-md-3'>
               <div className='consul__inner no_bdr'>
                 <Link to='#' className="stretched-link" data-bs-toggle="modal" data-bs-target="#downloadForm">
-                  <i className='sym_download'></i>
+                  <i className='fas fa-download'></i>
                 </Link>
                 <strong>Download</strong>
                 <span>
@@ -320,7 +281,7 @@ const Home = (props) => {
             <div className='col-md-3'>
               <div className='consul__inner'>
                 <Link to='#' className="stretched-link" data-bs-toggle="modal" data-bs-target="#consulForm">
-                  <i className='sym_agent'></i>
+                  <i className='far fa-handshake'></i>
                 </Link>
                 <strong>Consultant</strong>
                 <span>
@@ -331,7 +292,7 @@ const Home = (props) => {
             <div className='col-md-3'>
               <div className='consul__inner'>
                 <Link to='#' className="stretched-link" data-bs-toggle='modal' data-bs-target='#SitevisitForm'>
-                  <i className='sym_cab'></i>
+                  <i className='fas fa-car-alt'></i>
                 </Link>
 
                 <strong>Site Visit</strong>
@@ -343,7 +304,7 @@ const Home = (props) => {
             <div className='col-md-3'>
               <div className='consul__inner no_bdr'>
                 <Link to='#' className="stretched-link" data-bs-toggle='modal' data-bs-target='#BestdealForm'>
-                  <i className='sym_np-deals-offers'></i>
+                  <i className='fas fa-gifts'></i>
                 </Link>
                 <strong>Best Deal</strong>
                 <span>Enjoy Special Festive Or Seasonal Offers.</span>
@@ -380,32 +341,32 @@ const Home = (props) => {
 
             <div className='col-lg-3 col-md-4 col-sm-4 col-6'>
               <div className='ameni_item'>
-                <i className='sym_nightclub-filled'></i> Clubhouse
+                <i class="fas fa-dice"></i> Clubhouse
               </div>
             </div>
             <div className='col-lg-3 col-md-4 col-sm-4 col-6'>
               <div className='ameni_item'>
-                <i className='sym_gym'></i> Gym
+                <i class="fas fa-dumbbell"></i> Gym
               </div>
             </div>
             <div className='col-lg-3 col-md-4 col-sm-4 col-6'>
               <div className='ameni_item'>
-                <i className='sym_amenities-swimming'></i> Swimming Pool
+                <i class="fas fa-swimming-pool"></i> Swimming Pool
               </div>
             </div>
             <div className='col-lg-3 col-md-4 col-sm-4 col-6'>
               <div className='ameni_item'>
-                <i className='sym_community-hall'></i> Tennis Court
+                <i class="fas fa-table-tennis"></i> Tennis Court
               </div>
             </div>
             <div className='col-lg-3 col-md-4 col-sm-4 col-6'>
               <div className='ameni_item'>
-                <i className='sym_playarea'></i> Children's Play Area
+                <i class="fas fa-child"></i> Children's Play Area
               </div>
             </div>
             <div className='col-lg-3 col-md-4 col-sm-4 col-6'>
               <div className='ameni_item'>
-                <i className='sym_sports'></i> Cricket Pitch
+                <i class="fas fa-baseball-ball"></i> Cricket Pitch
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
@@ -415,12 +376,12 @@ const Home = (props) => {
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
               <div className='ameni_item'>
-                <i className='sym_basketball'></i> Basketball Court
+                <i class="fas fa-baseball-ball"></i> Basketball Court
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
               <div className='ameni_item'>
-                <i className='sym_nightclub-filled'></i> Party Lawn
+                <i class="fas fa-glass-cheers"></i> Party Lawn
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
@@ -430,20 +391,16 @@ const Home = (props) => {
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
               <div className='ameni_item'>
-                <i className='sym_ra-property'></i> Pet Park
+                <i class="fas fa-parking"></i> Pet Park
               </div>
             </div>
           </div>
         </div>
       </section>
-      {
-        weWorkpopUpAllContent.map((first, index) => {
-          return (
-            // <HowWeWork key={index} popUpId={first.popUpId} popUpContent={first.popUpContent} />
-            <HowWeWork key={index} popUpId='downloadForm' iconName='sym_download' iconValue='Download' Para='Allow us to help you with more downloadable information. By filling this form you will get a mail with given below downloadable items:' liLebel='Master Plan' liLebel='Floor Plan' />
-          );
-        })
-      }
+      <HowDownload />
+      <HowConsultant />
+      <HowSiteVisit />
+      <HowBestDeal />
       <Footer />
     </>
   )

@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: heading-font;
-  src: url('../fonts/Humanist521BT-Bold.woff');
+  src: url(../fonts/Humanist521BT-Bold.woff);
 }
 
 .fancybox-container,
@@ -196,7 +196,7 @@ label i {
 
 .prce_list {
   padding: 3rem 0 4rem;
-  background-color: rgba($theme-bgcolor, 0.8);
+  background-color: rgba($theme-bgcolor, 0.2);
   .prclist {
     background-color: rgba($white, 0.4);
     margin-bottom: 3rem;
@@ -291,40 +291,36 @@ label i {
 
 .consul_area {
   position: relative;
-  background: rgba($gray-900, 0.95);
+  // background: rgba($gray-900, 0.95);
   padding: 3rem 0;
   margin-bottom: 2rem;
-  .h2 {
-    color: $white;
-  }
   .no_bdr {
     border: none;
   }
   .consul__inner {
-    border-left: 1px solid $theme-bg-light;
-    border-right: 1px solid $theme-bg-light;
+    border-left: 1px solid $theme-bgcolor;
+    border-right: 1px solid $theme-bgcolor;
     padding: 1rem;
-    color: $theme-bg-light;
+    // color: $theme-bg-light;
     text-align: center;
     font-size: 1.1rem;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
-    position: relative;
     a {
       text-decoration: none;
-    }
-    i {
+      color: $theme-bgcolor;
       display: block;
-      font-size: 3.5rem;
-      color: $theme-bg-light;
-      margin-bottom: 0.5rem;
+      i {
+        font-size: 3.5rem;
+        margin-bottom: 0.5rem;
+      }
     }
     span {
       margin-top: 0.5rem;
       display: block;
       font-size: 0.9rem;
       text-transform: none;
-      color: $white;
+      // color: $white;
     }
   }
   @media (max-width: 767px) {
