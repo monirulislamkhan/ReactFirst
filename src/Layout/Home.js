@@ -2,17 +2,18 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Header from '../Component/Header';
 import Banner from '../Component/Banner';
+import { ProjectDetails } from '../Component/ProjectDetails';
 import ProjectForm from '../Component/MainForm';
 import Prices from '../Component/Prices';
-import HowDownload from '../Component/HowDownload';
-import HowConsultant from '../Component/HowConsultant';
-import HowSiteVisit from '../Component/HowSiteVisit';
-import HowBestDeal from '../Component/HowBestDeal';
+import { HowDownload } from '../Component/HowDownload';
+import { HowConsultant } from '../Component/HowConsultant';
+import { HowSiteVisit } from '../Component/HowSiteVisit';
+import { HowBestDeal } from '../Component/HowBestDeal';
+import { DecisionCorner } from '../Component/DecisionCorner';
 // import Wedelever from '../Component/WeDeliver';
 import Footer from '../Component/Footer';
 
 const Home = (props) => {
-  const article = '';
   const priceData = [
     {
       unittype: '2 BHK',
@@ -43,7 +44,7 @@ const Home = (props) => {
   return (
     <>
       <Header />
-      <Banner />
+      <Banner DBanner='home-page-banner' MBanner='home-page-banner-small' />
       <section className='banner_info'>
         <div className='container'>
           <div className='row justify-content-center'>
@@ -61,9 +62,9 @@ const Home = (props) => {
             <div className='col-lg-4 order-lg-1'>
               <div className='right_form'>
                 <div className='frm_call'>
-                  <a href='tel:+911149500008' rel='nofollow'>
+                  <Link to='tel:+911149500008' rel='nofollow'>
                     <i className="fas fa-phone-alt"></i> +91 11 4950 0008
-                  </a>
+                  </Link>
                 </div>
                 <div className='frm_heading'>EXPRESS YOUR INTEREST.</div>
                 <div className='frm_inner'>
@@ -76,91 +77,7 @@ const Home = (props) => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-8 order-lg-0'>
-              <div className='p_det'>
-                <div className='row'>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>30 : 70 </span>
-                    <p>easy to own payment plan</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>39+ acre </span>
-                    <p>of a big scale group housing development</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>8.5 ACRE </span>
-                    <p>of urban park & open green spaces</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>32 METER </span>
-                    <p>grand entrance plaza</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>15 MINS </span>
-                    <p>from IGI Airport</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>16 SPORTS </span>
-                    <p>& social amenities</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>2 CLUBHOUSES </span>
-                    <p>spread over 40,000 sq.ft.</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>HALF AN ACRE </span>
-                    <p>of resort style lakelet</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className='p_config'>
-                <div className='row'>
-                  <div className='col-md-12'>
-                    <div className='h5 conf_heading'>Configurations</div>
-                  </div>
-                  <div className='col-lg-4 col-md-4 col-sm-4 col-6'>
-                    <div className='config_item'>
-                      <i className='fas fa-home'></i> <span>Property Type </span>
-                      <p>Apartments</p>
-                    </div>
-                  </div>
-                  <div className='col-lg-4 col-md-4 col-sm-4 col-6'>
-                    <div className='config_item'>
-                      <i className='fas fa-map-marked'></i>{' '}
-                      <span>Location </span>
-                      <p>Sector 108, Gurgaon</p>
-                    </div>
-                  </div>
-                  <div className='col-lg-4 col-md-4 col-sm-4 col-6'>
-                    <div className='config_item'>
-                      <i className="fas fa-ruler-combined"></i> <span>Sizes </span>
-                      <p>1381 - 2343 Sq.Ft.</p>
-                    </div>
-                  </div>
-                  <div className='col-lg-4 col-md-4 col-sm-4 col-6'>
-                    <div className='config_item'>
-                      <i className="fas fa-building"></i> <span>Towers </span>
-                      <p>22 Towers</p>
-                    </div>
-                  </div>
-                  <div className='col-lg-4 col-md-4 col-sm-4 col-6'>
-                    <div className='config_item'>
-                      <i className="fas fa-bed"></i> <span>Bedroom </span>
-                      <p>2 BHK, 3 BHK</p>
-                    </div>
-                  </div>
-                  <div className='col-lg-4 col-md-4 col-sm-4 col-6'>
-                    <div className='config_item'>
-                      <i className="fas fa-rupee-sign"></i> <span>Price </span>
-                      <p>
-                        1.20* Cr. <small>Onwards</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProjectDetails />
           </div>
         </div>
       </section>
@@ -341,32 +258,32 @@ const Home = (props) => {
 
             <div className='col-lg-3 col-md-4 col-sm-4 col-6'>
               <div className='ameni_item'>
-                <i class="fas fa-dice"></i> Clubhouse
+                <i className="fas fa-dice"></i> Clubhouse
               </div>
             </div>
             <div className='col-lg-3 col-md-4 col-sm-4 col-6'>
               <div className='ameni_item'>
-                <i class="fas fa-dumbbell"></i> Gym
+                <i className="fas fa-dumbbell"></i> Gym
               </div>
             </div>
             <div className='col-lg-3 col-md-4 col-sm-4 col-6'>
               <div className='ameni_item'>
-                <i class="fas fa-swimming-pool"></i> Swimming Pool
+                <i className="fas fa-swimming-pool"></i> Swimming Pool
               </div>
             </div>
             <div className='col-lg-3 col-md-4 col-sm-4 col-6'>
               <div className='ameni_item'>
-                <i class="fas fa-table-tennis"></i> Tennis Court
+                <i className="fas fa-table-tennis"></i> Tennis Court
               </div>
             </div>
             <div className='col-lg-3 col-md-4 col-sm-4 col-6'>
               <div className='ameni_item'>
-                <i class="fas fa-child"></i> Children's Play Area
+                <i className="fas fa-child"></i> Children's Play Area
               </div>
             </div>
             <div className='col-lg-3 col-md-4 col-sm-4 col-6'>
               <div className='ameni_item'>
-                <i class="fas fa-baseball-ball"></i> Cricket Pitch
+                <i className="fas fa-baseball-ball"></i> Cricket Pitch
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
@@ -376,12 +293,12 @@ const Home = (props) => {
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
               <div className='ameni_item'>
-                <i class="fas fa-baseball-ball"></i> Basketball Court
+                <i className="fas fa-baseball-ball"></i> Basketball Court
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
               <div className='ameni_item'>
-                <i class="fas fa-glass-cheers"></i> Party Lawn
+                <i className="fas fa-glass-cheers"></i> Party Lawn
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
@@ -391,12 +308,273 @@ const Home = (props) => {
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
               <div className='ameni_item'>
-                <i class="fas fa-parking"></i> Pet Park
+                <i className="fas fa-parking"></i> Pet Park
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section className="new_sec">
+        <svg className="custom-svg3" width="100%" height="298" xmlns="http://www.w3.org/2000/svg">
+          <path id="svg_2" fill="#ffffff" stroke="#000" stroke-width="0" d="m-19.87006,126.33922c0,0 2.16796,-1.48437 6.92379,-3.91356c4.75584,-2.42918 12.09956,-5.80319 22.45107,-9.58247c20.70303,-7.55856 53.43725,-16.7382 101.56202,-23.22255c48.12477,-6.48434 111.6401,-10.27339 193.90533,-7.05074c41.13262,1.61132 88.20271,5.91306 140.3802,12.50726c52.17748,6.59421 -86.4742,-15.61273 171.02458,26.26208c64.37469,10.4687 130.09704,0.19531 175.01626,-5.4736c44.91922,-5.66892 49.93384,-12.28022 191.44685,-45.34647c141.51301,-33.06625 221.34662,-61.99188 426.81438,-59.4919c102.73388,1.24999 203.44102,29.65927 398.99543,109.88821c195.55441,80.22895 668.78972,-44.38181 814.0537,-9.88704c-76.25064,69.23438 407.49874,281.32592 331.2481,350.5603c-168.91731,29.52009 85.02254,247.61162 -83.89478,277.13171c84.07062,348.27313 -2948.95065,-242.40222 -2928.39024,-287.84045"></path>
+        </svg>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 position-relative mt-lg-2">
+              <div className="h1">Sobha City Gurgaon Construction Well Under Way</div>
+              <p className="pb-3">With robust construction and quality development the site of Sobha City Dwarka Expressway is getting ready to offer its possession on time</p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="new_list">
+                <img src="images/constructions-thumb.jpg" className="img-fluid" alt={`Construction update of ${window.name}`} />
+                <div className="inner_det">
+                  <div className="h5 mb-3 w-50">More than 50% construction is at its finished stage</div>
+                  <button className="btn btn-primary">Explore More..</button>
+                </div>
+                <Link to="/constrution-update.html" className="stretched-link"></Link>
+              </div>
+            </div>
+            <div className="col-lg-6 mt-lg-0 mt-5">
+              <div className="new_list last">
+                <img src="images/sample-flat-thumb.jpg" className="img-fluid" alt={`Sample flats of ${window.name}`} />
+                <div className="inner_det">
+                  <div className="h5 mb-3 w-50">Sample flat ready with alluring interior & futuristic designs</div>
+                  <button type='button' className="btn btn-primary">Explore More..</button>
+                </div>
+                <Link to="/sample-flat.html" className="stretched-link"></Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="location_advan">
+        <div className="row gx-0">
+          <figure className="col-lg-6"><img src="images/sobha-city-gurgaon-location-advantage.jpg" className="img-fluid" alt="Best Location for Seamless Connectivity" /></figure>
+          <div className="col-lg-6">
+            <div className="advan_inner">
+              <div className="h2">Location Map</div>
+              <p>Sector 108 Gurgaon is one of the best sectors on Dwarka Expressway. For individuals who add a spark to their lives with convenience and connectivity, it’s the locality to be. Right from the
+                Delhi international airport and hospitals to world-class hotels and malls, everything is at just a few minutes away from Sobha City Gurgaon. IT Parks, commercial hubs, educational institutes,
+                you name it and the region have it.</p>
+              <ul>
+                <li>Well Connected to Dwarka Expressway Gurgaon.</li>
+                <li>Railway Station - 7 Kms</li>
+                <li>10 Kms From Indra Gandhi International Airport</li>
+                <li>Connected to Delhi Through 75 Mtrs Wide Road: Fully Functional</li>
+                <li>Gurgaon ISBT - 15 Kms Approx</li>
+                <li>Gurgaon Central Business District - 20 Minutes</li>
+                <li>South Delhi - 25 Minutes</li>
+                <li>Gurgaon Central Business District - 20 Minutes</li>
+              </ul>
+              <div className="mt-3">
+                <Link to="/location-map.html" className="btn btn-outline-primary">More Explore <i className="sym_forward-arrow"></i></Link>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section className="py-3 py-lg-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div id="faqId">
+                <h4>Frequently Asked Questions
+                  <hr />
+                </h4>
+                <div itemscope="" itemtype="http://schema.org/FAQPage">
+                  <div itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
+                    <h6 itemprop="name text"><strong>Q. How much is the total size of the Sobha City Gurgaon 108 ?</strong></h6>
+                    <div itemprop="acceptedAnswer" itemscope="" itemtype="http://schema.org/Answer">
+                      <p itemprop="text" className="albos-qna-answer">Ans. Sobha City Gurgaon is spread over 39+ acres of land.</p>
+                    </div>
+                  </div>
+
+                  <div itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
+                    <h6 itemprop="name text"><strong>Q. Which banks are providing loan facility for Sobha City Gurgaon?</strong></h6>
+                    <div itemprop="acceptedAnswer" itemscope="" itemtype="http://schema.org/Answer">
+                      <p itemprop="text" className="albos-qna-answer">Ans. Many reputed government & private banks are providing home loan facility for Sobha City Dwara Expressway. </p>
+                    </div>
+                  </div>
+
+                  <div itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
+                    <h6 itemprop="name text"><strong>Q. What is the project location?</strong></h6>
+                    <div itemprop="acceptedAnswer" itemscope="" itemtype="http://schema.org/Answer">
+                      <p itemprop="text">Ans. Sobha City is located at Sector 108 Gurgaon nearby Dwara Expressway.</p>
+                    </div>
+                  </div>
+
+                  <div itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
+                    <h6 itemprop="name text"><strong>Q. Which property options are available in Sobha City ?</strong></h6>
+                    <div itemprop="acceptedAnswer" itemscope="" itemtype="http://schema.org/Answer">
+                      <p itemprop="text">Ans. 2 & 3 bedroom apartments are available for sale in this residential community.</p>
+                    </div>
+                  </div>
+
+                  <div itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
+                    <h6 itemprop="name text"><strong>Q. What is the existing price in Sobha City Gurgaon?</strong></h6>
+                    <div itemprop="acceptedAnswer" itemscope="" itemtype="http://schema.org/Answer">
+                      <p itemprop="text">Ans. The starting price of the Sobha City Gurgaon is 1.23 Crore.</p>
+                    </div>
+                  </div>
+
+                  <div itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
+                    <h6 itemprop="name text"><strong>Q. Who is the owner of Sobha City?</strong></h6>
+                    <div itemprop="acceptedAnswer" itemscope="" itemtype="http://schema.org/Answer">
+                      <p itemprop="text">Ans. Mr. PNC Menon is the Founder of Sobha City.</p>
+                    </div>
+                  </div>
+
+                  <div itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
+                    <h6 itemprop="name text"><strong>Q. Is Sobha City Gurgaon a Good Investment?</strong></h6>
+                    <div itemprop="acceptedAnswer" itemscope="" itemtype="http://schema.org/Answer">
+                      <div itemprop="text">
+                        <p>Ans. Sobha City Gurgaon is the most desirable housing projects in Delhi NCR. Indeed the presence of this project near Sector 102, Gurgaon,calls for higher benefits in the future.</p>
+                        <p>The real estate market in this area is quite deep, and hence many developments are coming in a series in this locality.</p>
+                        <p><strong> So an investment point of view, Sobha City Gurgaon Apartments is the lucrative option which offers: -</strong></p>
+                        <ul>
+                          <li>Quality estate work with the top-notch living standard</li>
+                          <li>State-of-the-art amenities wisely executed in one place </li>
+                          <li>Planned at the entrance of Dwarka Expressway,so reachable to Delhi</li>
+                          <li>Closer to IGI Airport, NH 8</li>
+                          <li>Next to the natural surroundings of Delhi reserved Greens area </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about_dev">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h4>About Sobha Developer</h4>
+              <p><strong>Sobha</strong> is one of the reputed names in Indian Real Estate Industry headquartered in Bangalore, India. This real estate developer is active in the business of construction, development, sale, administration, and operation, residential & commercial developments, townships and other real estate related activities. Their residential & commercial and township developments in 9 cities (Bangalore, Gurgaon, Chennai, Pune, Coimbatore, Thrissur, Calicut, Cochin, and Mysore) have fulfilled the desire of luxury home with international class features & amenities at a very reasonable price.</p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <DecisionCorner />
+
+      {/* <?php include('callback.php') ?> */}
+
+
+      <section class="adsarea mb-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="ads_inner">
+                <Link to="/properties-in-dwarka-expressway-with-high-roi.html" target="_blank" class="stretched-link"></Link>
+                <div class="row no-gutters">
+                  <figure class="col-md-6"><img src="images/property-in-dwarka-ads.jpg" alt="GET YOUR FREE EUROPE TRIP ON THE SPOT" class="img-fluid w-100" /></figure>
+                  <div class="col-md-6">
+                    <div class="txt_inner">
+                      <div class="h3">Dwarka Expressway with High Investment Potential</div>
+                      <div class="h5">Robust Real Estate Developments Highlighting Exclusive Range of Properties</div>
+                      <div class="h4 text-warning">Interested? Get a Free Site Visit</div>
+                      <div class="ads_btn"><button class="btn btn-warning"><i class="sym_arrow-right"></i></button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog_sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="h2 text-center">Special Reading</div>
+              <p class="b_desc">We encourage optimistic knowledge & information to educate you with the best Real Estate side!</p>
+            </div>
+            <div class="col-lg-12">
+              <div class="blog">
+                <div class="blog__list">
+                  <Link to="http://www.sobhacitygurgaon.org.in/blog/what-all-benefits-you-can-hope-for-in-under-construction-property-sobha-city-gurgaon" class="stretched-link" target="_blank">
+
+                  </Link>
+                  <div class="blog__list__inner">
+                    <h3>What all benefits you can hope for in under construction property Sobha city Gurgaon?</h3>
+                    <div class="auth">
+                      <ul>
+                        <li>Author</li>
+                        <li>Jun, 16, 2021</li>
+                      </ul>
+                    </div>
+                    <p>Under Construction projects are better in terms of quality and cost because one can have a check on the quality development where they ...&nbsp;</p>
+                    <div class="readmore">Continue Reading <i class="sym_arrow-right"></i></div>
+                  </div>
+                </div>
+                <div class="blog__list">
+                  <Link to="http://www.sobhacitygurgaon.org.in/blog/why-smart-design-is-an-important-criterion-for-selecting-your-home" class="stretched-link" target="_blank">
+
+                  </Link>
+                  <div class="blog__list__inner">
+                    <h3>Why Smart Design Is An Important Criterion For Selecting Your Home!</h3>
+                    <div class="auth">
+                      <ul>
+                        <li>Author</li>
+                        <li>Jun, 11, 2021</li>
+                      </ul>
+                    </div>
+
+                    <p>When you are looking for your dream home in Gurgaon, you look out for wide range of different features like luxury amenities, accessibi...&nbsp;</p>
+                    <div class="readmore">Continue Reading <i class="sym_arrow-right"></i></div>
+                  </div>
+                </div>
+                <div class="blog__list">
+                  <Link to="http://www.sobhacitygurgaon.org.in/blog/how-many-things-you-should-consider-while-watching-a-sample-flats-in-sobha-city-gurgaon" class="stretched-link" target="_blank">
+
+                  </Link>
+                  <div class="blog__list__inner">
+                    <h3>How many things you should consider while watching a sample flats  in Sobha City Gurgaon ?</h3>
+                    <div class="auth">
+                      <ul>
+                        <li>Author</li>
+                        <li>Jun, 10, 2021</li>
+                      </ul>
+                    </div>
+
+                    <p><strong>Sobha City Sample Flats</strong> are well-designed, captivating &amp; openhearted, just like what an actual apartment would loo...&nbsp;</p>
+                    <div class="readmore">Continue Reading <i class="sym_arrow-right"></i></div>
+                  </div>
+                </div>
+                <div class="blog__list">
+                  <Link to="http://www.sobhacitygurgaon.org.in/blog/sobha-city-sector-108-from-the-eyes-of-site-visitors" class="stretched-link" target="_blank">
+
+                  </Link>
+                  <div class="blog__list__inner">
+                    <h3>Sobha City, Sector 108 : From the Eyes of Site Visitors!</h3>
+                    <div class="auth">
+                      <ul>
+                        <li>Author</li>
+                        <li>May, 29, 2021</li>
+                      </ul>
+                    </div>
+
+                    <p>Sobha City Sector 108 Gurgaon is a residential project on 39+ acres of land on Dwarka Expressway. This community is dedicated exclusive...&nbsp;</p>
+                    <div class="readmore">Continue Reading <i class="sym_arrow-right"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center mt-4"><Link to="http://www.sobhacitygurgaon.org.in/blog/" class="btn btn-outline-primary">Read More Blogs <i class="sym_arrow-right"></i></Link></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <HowDownload />
       <HowConsultant />
       <HowSiteVisit />

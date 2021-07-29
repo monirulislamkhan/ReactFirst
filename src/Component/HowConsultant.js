@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectForm from './MainForm';
-const HowConsultant = () => {
+export const HowConsultant = () => {
   return (
     <>
       <div className="modal fade" id='consulForm' tabIndex="-1" aria-hidden="true">
@@ -31,5 +31,3 @@ const HowConsultant = () => {
     </>
   )
 }
-
-export default HowConsultant;

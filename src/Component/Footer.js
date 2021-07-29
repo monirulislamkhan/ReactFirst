@@ -1,53 +1,42 @@
 import React from 'react';
-import ProjectForm from './MainForm';
-// const currentYear = document.getElementById('currentYear').innerHTML = new Date().getFullYear;
-// const currentYear = new Date().getFullYear;
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <>
-      <footer>
+      <footer className="footer">
         <div className="container">
-          <div className="row">
+          <div id="row">
             <div className="col-lg-12">
-              <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/location-map.html">Location Map</a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-                <li><a href="/disclaimer.html" rel="nofollow">Disclaimer</a></li>
-              </ul>
-              <div className="copyright">Copyright &copy; domainName 2014 - <span></span> | All Rights Reserved</div>
+              <div className="footer_con">
+                <ul>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/specifications.html">Specifications</Link></li>
+                  <li><Link to="/price-list.html">Price List</Link></li>
+                  <li><Link to="/location-map.html">Location Map</Link></li>
+                  <li><Link to="/master-plan.html">Master Plan</Link></li>
+                  <li><Link to="/floor-plan.html">Floor Plan</Link></li>
+                  <li><Link to="/elevation-images.html">Gallery</Link></li>
+                  <li><Link to="/properties-in-dwarka-expressway-with-high-roi.html" title="Why Dwarka Expressway Gurgaon worth investing?">Properties with High ROI</Link></li>
+                </ul>
+                <div className="ftr_copyright">Copyright &copy; {window.domainName} 2015 - <span>{new Date().getFullYear()}</span> | All Rights Reserved | <Link to="/disclaimer.html">Disclaimer</Link></div>
+              </div>
             </div>
           </div>
         </div>
       </footer>
+      <div className="enq_btn" data-toggle="modal" data-target="#ftrForm"><i className="sym_message"></i></div>
 
       <div className="aside_btn">
-        <div className="asd_item1"><i className="fas fa-ellipsis-v"></i></div>
-        <div className="asd_item2"><input type="button" className="btn btn-primary btn-block" value="Enquire Now" data-toggle="modal" data-target="#ftrForm" /></div>
-      </div>
-
-      <div className="display_popup">
         <ul>
-          <li><a href="tel:+91 98 1199 9666"><i className="fas fa-phone-alt"></i> <span>Call Now</span></a></li>
-          <li><a href="https://api.whatsapp.com/send?phone=+919811999666&amp;text=Hey%20I'm%20interested%20in%20%20godrej serenity gurgaon" rel="nofollow"><i className="fab fa-whatsapp"></i> <span>Whatsapp Now</span></a></li>
+          <li className="xs_w-20"><button className="btn btn-primary btn-block more_btn"><i className="sym_options"></i></button></li>
+          <li className="xs_w-40"><Link className="btn btn-primary btn-block" to="" data-toggle="modal" data-target="#ftrForm">Enquire Now</Link></li>
         </ul>
       </div>
-
-      <div className="modal fade" id="ftrForm" tabIndex="-1" role="dialog" aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered" role="document">
-          <div className="modal-content shadow">
-            <div className="modal-header">
-              <div className="modal-content_heading">EXPRESS YOUR INTEREST</div>
-              <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div className="modal-body">
-              <div className="mmessages" id="modalcontact-div" style={{ display: 'none' }}>
-                <div id="modalpost_status"></div>
-              </div>
-              <ProjectForm />
-            </div>
-          </div>
-        </div>
+      <div className="display_popup">
+        <ul>
+          <li><Link to="tel:+911149500008"><i className="sym_contact"></i></Link></li>
+          <li><Link to="https://api.whatsapp.com/send?phone=+919999428963&amp;text=I'm%20interested%20in%20Sobha%20City%20Gurgaon%20Sector-108" rel="nofollow"><img src="images/whatsapp.svg" alt="Whatsapp" height="30" /></Link></li>
+        </ul>
       </div>
     </>
   )

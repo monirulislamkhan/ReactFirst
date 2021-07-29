@@ -1,9 +1,9 @@
 import React from 'react';
 import ProjectForm from './MainForm';
-const HowBestDeal = () => {
+export const HowBestDeal = () => {
   return (
     <>
-      <div className="modal fade" id='SitevisitForm' tabIndex="-1" aria-hidden="true">
+      <div className="modal fade" id='BestdealForm' tabIndex="-1" aria-hidden="true">
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
@@ -29,5 +29,3 @@ const HowBestDeal = () => {
     </>
   )
 }
-
-export default HowBestDeal;

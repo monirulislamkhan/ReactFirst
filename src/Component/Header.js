@@ -26,7 +26,8 @@ const Header = (props) => {
                 Home
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className={`nav-item ${props.location.pathname === "/specifications.html" ? "active" : ""
+              }`}>
               <Link className='nav-link' to='/specifications.html'>
                 Specifications
               </Link>

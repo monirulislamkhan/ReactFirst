@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectForm from './MainForm';
-const HowDownload = () => {
+export const HowDownload = () => {
   return (
     <>
       <div className="modal fade" id='downloadForm' tabIndex="-1" aria-hidden="true">
@@ -30,5 +30,3 @@ const HowDownload = () => {
     </>
   )
 }
-
-export default HowDownload;
