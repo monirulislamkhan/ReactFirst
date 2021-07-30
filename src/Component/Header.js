@@ -32,27 +32,34 @@ const Header = (props) => {
                 Specifications
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className={`nav-item ${props.location.pathname === "/price-list.html" ? "active" : ""
+              }`}>
               <Link className='nav-link' to='/price-list.html'>
                 Price List
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className={`nav-item ${props.location.pathname === "/location-map.html" ? "active" : ""
+              }`}>
               <Link className='nav-link' to='/location-map.html'>
                 Location Map
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className={`nav-item ${props.location.pathname === "/master-plan.html" ? "active" : ""
+              }`}>
               <Link className='nav-link' to='/master-plan.html'>
                 Master Plan
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className={`nav-item ${props.location.pathname === "/floor-plan.html" ? "active" : ""
+              }`}>
               <Link className='nav-link' to='/floor-plan.html'>
                 Floor Plan
               </Link>
             </li>
-            <li className='nav-item dropdown'>
+            <li className={`nav-item dropdown ${props.location.pathname === "/elevation-images.html" ? "active" : ""
+              } : ${props.location.pathname === "/construction-update.html" ? "active" : ""
+              } : ${props.location.pathname === "/sample-flat.html" ? "active" : ""
+              }`}>
               <Link
                 className='nav-link dropdown-toggle'
                 to='/#'
@@ -67,12 +74,14 @@ const Header = (props) => {
                 className='dropdown-menu dropdown-menu-end'
                 aria-labelledby='navbarDropdown'
               >
-                <li>
+                <li className={`nav-item ${props.location.pathname === "/elevation-images.html" ? "active" : ""
+                  }`}>
                   <Link className='dropdown-item' to='/elevation-images.html'>
                     Elevation Images
                   </Link>
                 </li>
-                <li>
+                <li className={`nav-item ${props.location.pathname === "/construction-update.html" ? "active" : ""
+                  }`}>
                   <Link
                     className='dropdown-item'
                     to='/construction-update.html'
@@ -80,7 +89,8 @@ const Header = (props) => {
                     Construction Update
                   </Link>
                 </li>
-                <li>
+                <li className={`nav-item ${props.location.pathname === "/sample-flat.html" ? "active" : ""
+                  }`}>
                   <Link className='dropdown-item' to='/sample-flat.html'>
                     Sample Flat
                   </Link>

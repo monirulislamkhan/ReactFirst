@@ -9,7 +9,7 @@ export const DecisionCorner = () => {
       <div className="callb__left">
         <div className="callb__left__one">
           <div className="h6 font-weight-bold">Let Us Serve You Beyond</div>
-          <Link to="javascript:void(Tawk_API.toggle())" className="btn btn-primary">Ask Any Question</Link>
+          <Link to="" className="btn btn-primary">Ask Any Question</Link>
         </div>
         <div className="callb__left__two">
           <div className="h6 font-weight-bold">Talk For Right Investment</div>

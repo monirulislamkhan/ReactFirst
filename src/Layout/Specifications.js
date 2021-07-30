@@ -1,15 +1,17 @@
 import React from 'react';
+import { Helmet } from "react-helmet";
 import Header from '../Component/Header';
-import Banner from '../Component/Banner';
-import { BannerInfo } from '../Component/BannerInfo';
 import Footer from '../Component/Footer';
 import { DecisionCorner } from '../Component/DecisionCorner';
 const Home = (props) => {
   return (
     <>
+      <Helmet>
+        <title>Specification - </title>
+        <meta name='description' content='' />
+        <link rel="canonical" href="" />
+      </Helmet>
       <Header />
-      <Banner DBanner='specification-page-banner' MBanner='specification-page-banner-small' />
-      <BannerInfo PageTitle='Specifications' PageTitleTag='Live life super-comfy at Sobha City Gurgaon!' />
       <section className="inner_bg">
         <div className="container">
           <div className="row">

@@ -1,10 +1,7 @@
 import React from 'react';
-import Home from '../Layout/Home';
-import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
-import { ProjectDetails } from '../Component/ProjectDetails';
-import MainForm from '../Component/MainForm';
-import Specifications from '../Layout/Specifications';
-
+import { Link } from "react-router-dom";
+import MainForm from '../Component/MainForm'
+import { ProjectDetails } from '../Component/ProjectDetails'
 export const BannerInfo = (props) => {
   return (
     <section className='banner_info'>
@@ -12,16 +9,11 @@ export const BannerInfo = (props) => {
         <div className='row justify-content-center'>
           <div className='col-lg-12'>
             <div className='p_tit'>
-              <Switch>
-                <Route exact path="/specifications.html" component={Specifications}>
-                  <div className='h1'>{props.PageTitle}</div>
-                </Route>
-                <Route exact path="/" component={Home}>
-                  <h1>{props.PageTitle}</h1>
-                </Route>
-
-              </Switch>
-              <div className='tit_tag'>{props.PageTitleTag}</div>
+              <h1>{window.name}</h1>
+              <div className='tit_tag'>
+                Spacious 3 Bedroom & Home Office Residences with incredible
+                benefits.
+              </div>
             </div>
           </div>
         </div>

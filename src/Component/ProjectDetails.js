@@ -1,5 +1,4 @@
 import React from 'react';
-
 export const ProjectDetails = () => {
   return (
     <div className='col-lg-8 order-lg-0'>

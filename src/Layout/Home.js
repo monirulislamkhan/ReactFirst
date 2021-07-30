@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Header from '../Component/Header';
 import Banner from '../Component/Banner';
 import { BannerInfo } from '../Component/BannerInfo';
@@ -42,10 +43,14 @@ const Home = (props) => {
 
   return (
     <>
+      <Helmet>
+        <title>Sobha City Gurgaon Sector 108 - Just Pay 30% Now</title>
+        <meta name='description' content='Pay 30% Now & Rest on Possession, Sobha City Gurgaon offering 2 & 3 BHK apartments with home office, urban park residences with modern amenities in the fast-developing region.' />
+        <link rel="canonical" href="" />
+      </Helmet>
       <Header />
       <Banner DBanner='home-page-banner' MBanner='home-page-banner-small' />
-      <BannerInfo PageTitle={window.name} PageTitleTag='Spacious 3 Bedroom & Home Office Residences with incredible
-                benefits.' />
+      <BannerInfo />
       <section className='des_con'>
         <div className='container'>
           <div className='row mb-5'>

@@ -14,13 +14,13 @@ import Disclaimer from './Disclaimer';
 export {
   Home,
   Specifications,
-  // PriceList,
-  // locationMap,
-  // MasterPlan,
-  // FloorPlan,
-  // ElevationImages,
-  // ConstrutionUpdate,
-  // SampleFlat,
+  PriceList,
+  locationMap,
+  MasterPlan,
+  FloorPlan,
+  ElevationImages,
+  ConstrutionUpdate,
+  SampleFlat,
   ThankYou,
   Disclaimer
 }
