@@ -1,148 +1,27 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import Header from '../Component/Header';
 import Banner from '../Component/Banner';
-import ProjectForm from '../Component/MainForm';
+import { BannerInfo } from '../Component/BannerInfo';
 import Footer from '../Component/Footer';
 import { DecisionCorner } from '../Component/DecisionCorner';
-
 const Home = (props) => {
   return (
     <>
       <Header />
       <Banner DBanner='specification-page-banner' MBanner='specification-page-banner-small' />
-      <section className='banner_info'>
-        <div className='container'>
-          <div className='row justify-content-center'>
-            <div className='col-lg-12'>
-              <div className='p_tit'>
-                <h1>{window.name}</h1>
-                <div className='tit_tag'>
-                  Spacious 3 Bedroom & Home Office Residences with incredible
-                  benefits.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-lg-4 order-lg-1'>
-              <div className='right_form'>
-                <div className='frm_call'>
-                  <Link to='tel:+911149500008' rel='nofollow'>
-                    <i className="fas fa-phone-alt"></i> +91 11 4950 0008
-                  </Link>
-                </div>
-                <div className='frm_heading'>EXPRESS YOUR INTEREST.</div>
-                <div className='frm_inner'>
-                  <ProjectForm />
-                  <div className='mt-2 nshare'>
-                    <small>
-                      We will not share your email &amp; Number. No spam.
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='col-lg-8 order-lg-0'>
-              <div className='p_det'>
-                <div className='row'>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>30 : 70 </span>
-                    <p>easy to own payment plan</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>39+ acre </span>
-                    <p>of a big scale group housing development</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>8.5 ACRE </span>
-                    <p>of urban park & open green spaces</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>32 METER </span>
-                    <p>grand entrance plaza</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>15 MINS </span>
-                    <p>from IGI Airport</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>16 SPORTS </span>
-                    <p>& social amenities</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>2 CLUBHOUSES </span>
-                    <p>spread over 40,000 sq.ft.</p>
-                  </div>
-                  <div className='col-lg-6 col-md-4 col-sm-6 col-6'>
-                    <span>HALF AN ACRE </span>
-                    <p>of resort style lakelet</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className='p_config'>
-                <div className='row'>
-                  <div className='col-md-12'>
-                    <div className='h5 conf_heading'>Configurations</div>
-                  </div>
-                  <div className='col-lg-4 col-md-4 col-sm-4 col-6'>
-                    <div className='config_item'>
-                      <i className='fas fa-home'></i> <span>Property Type </span>
-                      <p>Apartments</p>
-                    </div>
-                  </div>
-                  <div className='col-lg-4 col-md-4 col-sm-4 col-6'>
-                    <div className='config_item'>
-                      <i className='fas fa-map-marked'></i>{' '}
-                      <span>Location </span>
-                      <p>Sector 108, Gurgaon</p>
-                    </div>
-                  </div>
-                  <div className='col-lg-4 col-md-4 col-sm-4 col-6'>
-                    <div className='config_item'>
-                      <i className="fas fa-ruler-combined"></i> <span>Sizes </span>
-                      <p>1381 - 2343 Sq.Ft.</p>
-                    </div>
-                  </div>
-                  <div className='col-lg-4 col-md-4 col-sm-4 col-6'>
-                    <div className='config_item'>
-                      <i className="fas fa-building"></i> <span>Towers </span>
-                      <p>22 Towers</p>
-                    </div>
-                  </div>
-                  <div className='col-lg-4 col-md-4 col-sm-4 col-6'>
-                    <div className='config_item'>
-                      <i className="fas fa-bed"></i> <span>Bedroom </span>
-                      <p>2 BHK, 3 BHK</p>
-                    </div>
-                  </div>
-                  <div className='col-lg-4 col-md-4 col-sm-4 col-6'>
-                    <div className='config_item'>
-                      <i className="fas fa-rupee-sign"></i> <span>Price </span>
-                      <p>
-                        1.20* Cr. <small>Onwards</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="inner_bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
+      <BannerInfo PageTitle='Specifications' PageTitleTag='Live life super-comfy at Sobha City Gurgaon!' />
+      <section className="inner_bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
               <h1>{`Specification -  ${window.name} Sector 108`}</h1>
-              <table class="table table-bordered">
+              <table className="table table-bordered">
                 <tbody>
                   <tr>
-                    <td class="topplan" colspan="2">Project Highlights</td>
+                    <td className="topplan" colSpan="2">Project Highlights</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><ul>
+                    <td colSpan="2"><ul>
                       <li>39 Acre of big scale development, One of the largest in Gurgaon</li>
                       <li>8.5 Acres of Absolute Green Spaces</li>
                       <li>32 Meter wide Grand Entrance Plaza</li>
@@ -151,10 +30,10 @@ const Home = (props) => {
                     </ul></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Functional Homes</strong></td>
+                    <td colSpan="2"><strong>Functional Homes</strong></td>
                   </tr>
                   <tr>
-                    <td colspan="2">
+                    <td colSpan="2">
                       <ul>
                         <li>Optimal sized living spaces</li>
                         <li>Thoughtfully designed layouts for ease of movement</li>
@@ -163,42 +42,42 @@ const Home = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Efficient Area</strong></td>
+                    <td colSpan="2"><strong>Efficient Area</strong></td>
                   </tr>
                   <tr>
-                    <td height="103" colspan="2"><ul><li>More carpet area</li>
+                    <td height="103" colSpan="2"><ul><li>More carpet area</li>
                       <li>Wall thickness of 160mm</li>
                       <li>Optimal sized balconies </li>
                       <li>4 apartments on each floor</li>
                     </ul></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Private Living</strong></td>
+                    <td colSpan="2"><strong>Private Living</strong></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><ul><li>Well spaced towers</li>
+                    <td colSpan="2"><ul><li>Well spaced towers</li>
                       <li>Apartment entrances not facing each other</li>
                       <li>No common walls between apartments</li>
                       <li>Wisely placed master bedroom for enhanced privacy</li>
                     </ul></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Ventilated Spaces</strong></td>
+                    <td colSpan="2"><strong>Ventilated Spaces</strong></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><ul><li>Large windows and sliding doors</li>
+                    <td colSpan="2"><ul><li>Large windows and sliding doors</li>
                       <li>Naturally-lit atriums</li>
                       <li>Adequate distance between towers</li>
                     </ul></td>
                   </tr>
                   <tr>
-                    <td class="topplan" colspan="2">Features &amp; Amenities</td>
+                    <td className="topplan" colSpan="2">Features &amp; Amenities</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Facilities for Active Sports &amp; Indoor Games</strong></td>
+                    <td colSpan="2"><strong>Facilities for Active Sports &amp; Indoor Games</strong></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><ul>
+                    <td colSpan="2"><ul>
                       <li>90m dia Cricket ground</li>
                       <li>60m long Olympic size Swimming pool</li>
                       <li>25m long all-weather indoor Swimming pool</li>
@@ -215,10 +94,10 @@ const Home = (props) => {
                     </ul></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Social Amenities for Leisure &amp; Recreation</strong></td>
+                    <td colSpan="2"><strong>Social Amenities for Leisure &amp; Recreation</strong></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><ul>
+                    <td colSpan="2"><ul>
                       <li>0.6 acres of resort style lakelet with an island deck &amp; toddler&rsquo;s pool</li>
                       <li>0.25 acres of Camping ground</li>
                       <li>Over an acre of dedicated party lawn</li>
@@ -227,10 +106,10 @@ const Home = (props) => {
                     </ul></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong> Amenities for Wellness &amp; Fitness</strong></td>
+                    <td colSpan="2"><strong> Amenities for Wellness &amp; Fitness</strong></td>
                   </tr>
                   <tr>
-                    <td colspan="2">
+                    <td colSpan="2">
                       <ul>
                         <li>2 fully equipped Gymnasium</li>
                         <li>Sauna &amp; Steam</li>
@@ -240,13 +119,13 @@ const Home = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <td class="topplan" colspan="2">Specifications</td>
+                    <td className="topplan" colSpan="2">Specifications</td>
                   </tr>
                   <tr>
-                    <td colspan="2">RCC framed structure with single basement, stilt &amp; 18-24 floors 24-hour power backup for apartments and common area facilities</td>
+                    <td colSpan="2">RCC framed structure with single basement, stilt &amp; 18-24 floors 24-hour power backup for apartments and common area facilities</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Foyer / Living / Dining</strong></td>
+                    <td colSpan="2"><strong>Foyer / Living / Dining</strong></td>
                   </tr>
                   <tr>
                     <td>Flooring</td>
@@ -261,7 +140,7 @@ const Home = (props) => {
                     <td>Spilt AC Provision, Television &amp; Telephone Point</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Bedrooms</strong></td>
+                    <td colSpan="2"><strong>Bedrooms</strong></td>
                   </tr>
                   <tr>
                     <td>Flooring</td>
@@ -277,7 +156,7 @@ const Home = (props) => {
                     <td>Spilt AC Provision, Television &amp; Telephone Point</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Kitchen</strong></td>
+                    <td colSpan="2"><strong>Kitchen</strong></td>
                   </tr>
                   <tr>
                     <td>Flooring</td>
@@ -300,7 +179,7 @@ const Home = (props) => {
                     <td>Stainless Steel Single Bowl Sink with Drain Board</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Balconies</strong></td>
+                    <td colSpan="2"><strong>Balconies</strong></td>
                   </tr>
                   <tr>
                     <td>Flooring</td>
@@ -319,7 +198,7 @@ const Home = (props) => {
                     <td>Parapet with Granite Coping / Ms Railing</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Bathrooms / Toilets</strong></td>
+                    <td colSpan="2"><strong>Bathrooms / Toilets</strong></td>
                   </tr>
                   <tr>
                     <td>Flooring</td>
@@ -350,7 +229,7 @@ const Home = (props) => {
                     <td>Chromium Plated Fittings &amp; Sanitaryware of Reputed Make</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Utility Room (In Tower C)</strong></td>
+                    <td colSpan="2"><strong>Utility Room (In Tower C)</strong></td>
                   </tr>
                   <tr>
                     <td>Flooring</td>
@@ -361,10 +240,10 @@ const Home = (props) => {
                     <td>Plastic Emulsion Paint</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Staircase</strong></td>
+                    <td colSpan="2"><strong>Staircase</strong></td>
                   </tr>
                   <tr>
-                    <td colspan="2">
+                    <td colSpan="2">
                       <ul>
                         <li>Cement Concrete for treads and Risers</li>
                         <li>Texture Paint for Walls</li>
@@ -373,7 +252,7 @@ const Home = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Common Areas</strong></td>
+                    <td colSpan="2"><strong>Common Areas</strong></td>
                   </tr>
                   <tr>
                     <td>Flooring</td>
@@ -392,7 +271,7 @@ const Home = (props) => {
                     <td>Granite Coping / Ms Handrail</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Doors &amp; Windows</strong></td>
+                    <td colSpan="2"><strong>Doors &amp; Windows</strong></td>
                   </tr>
                   <tr>
                     <td>Main Door</td>
@@ -415,10 +294,10 @@ const Home = (props) => {
                     <td>Heavy-Duty Powder Coated Aluminum Glazed Windows &amp; Ventilators</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Lifts</strong></td>
+                    <td colSpan="2"><strong>Lifts</strong></td>
                   </tr>
                   <tr>
-                    <td colspan="2">
+                    <td colSpan="2">
                       <ul>
                         <li>2 Lifts (15 Passenger Capacity &amp; 8 Passenger Capacity) in Tower A &amp; B</li>
                         <li>3 Lifts (One 15 Passenger Capacity &amp; Two 8 Passenger Capacity) in Tower C</li>
@@ -426,10 +305,10 @@ const Home = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Car Parking</strong></td>
+                    <td colSpan="2"><strong>Car Parking</strong></td>
                   </tr>
                   <tr>
-                    <td colspan="2">
+                    <td colSpan="2">
                       <ul>
                         <li>Covered Car Parks in Basement and Still Level</li>
                         <li>Additional Open Car Parking for Visitors on Ground Level</li>
@@ -437,33 +316,33 @@ const Home = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Security</strong></td>
+                    <td colSpan="2"><strong>Security</strong></td>
                   </tr>
                   <tr>
-                    <td colspan="2">
+                    <td colSpan="2">
                       <ul>
                         <li>Each Apartment Linked to Main Security Cabin Via Intercom</li>
                       </ul>
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Landscape</strong></td>
+                    <td colSpan="2"><strong>Landscape</strong></td>
                   </tr>
                   <tr>
-                    <td colspan="2">
+                    <td colSpan="2">
                       <ul>
                         <li>Designer Landscaping</li>
                       </ul>
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="2" class="topplan">Connectivity</td>
+                    <td colSpan="2" className="topplan">Connectivity</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Dwarka</strong> - 10 min.</td>
+                    <td colSpan="2"><strong>Dwarka</strong> - 10 min.</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><ul><li>G.D. Goenka School</li>
+                    <td colSpan="2"><ul><li>G.D. Goenka School</li>
                       <li>D.A.V. Public School</li>
                       <li>National Law University</li>
                       <li>Radisson Blu Hotel</li>
@@ -472,10 +351,10 @@ const Home = (props) => {
                     </ul></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Central Business District, Gurgaon</strong> - 20 min.</td>
+                    <td colSpan="2"><strong>Central Business District, Gurgaon</strong> - 20 min.</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><ul>
+                    <td colSpan="2"><ul>
                       <li>Cyber City, Gurgaon</li>
                       <li>Ambience Mall</li>
                       <li>The Leela Hotel</li>
@@ -484,10 +363,10 @@ const Home = (props) => {
                     </ul></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>IGI Airport &amp; Aerocity</strong> - 15 min.</td>
+                    <td colSpan="2"><strong>IGI Airport &amp; Aerocity</strong> - 15 min.</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><ul>
+                    <td colSpan="2"><ul>
                       <li>7 five-star hotels like JW Marriot
                         Hotel, Novotel Hotel, etc</li>
                       <li>14 lakh sq.ft. of Commercial Hub<ul><li>5 lakh sq.ft. of Retail &amp;
@@ -498,10 +377,10 @@ const Home = (props) => {
                     </ul></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>South Delhi</strong> - 25 min.</td>
+                    <td colSpan="2"><strong>South Delhi</strong> - 25 min.</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><ul>
+                    <td colSpan="2"><ul>
                       <li>Vasant Kunj
                         <ul>
                           <li>The Grand Hotel</li>
@@ -517,10 +396,10 @@ const Home = (props) => {
                     </ul></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Palam Vihar</strong> - 05 min.</td>
+                    <td colSpan="2"><strong>Palam Vihar</strong> - 05 min.</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><ul>
+                    <td colSpan="2"><ul>
                       <li>Ansal Plaza</li>
                       <li>Columbia Asia Hospital</li>
                       <li>Gems International School</li>
@@ -529,10 +408,10 @@ const Home = (props) => {
                     </ul></td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Upcoming Developments</strong> - 05 - 10 min.</td>
+                    <td colSpan="2"><strong>Upcoming Developments</strong> - 05 - 10 min.</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><ul>
+                    <td colSpan="2"><ul>
                       <li>IICC (India International Convention
                         and Expo Centre)</li>
                       <li>Diplomatic Enclave II</li>

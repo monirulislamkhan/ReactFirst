@@ -1,10 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import Home from './Layout/Home';
-import Specifications from './Layout/Specifications';
-import Disclaimer from './Layout/Disclaimer';
-import ThankYou from './Layout/ThankYou';
+import {
+  Home,
+  Specifications,
+  // PriceList,
+  // locationMap,
+  // MasterPlan,
+  // FloorPlan,
+  // ElevationImages,
+  // ConstrutionUpdate,
+  // SampleFlat,
+  ThankYou,
+  Disclaimer
+} from './Layout/AllPages';
 
 const App = () => {
   return (
