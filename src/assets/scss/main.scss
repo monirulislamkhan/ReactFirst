@@ -903,62 +903,88 @@ label i {
   }
 }
 
-.schedule_con {
-  .modal-body {
-    padding: 0;
-  }
-  .modal-header {
-    border-bottom: none;
-    padding: 0;
-    position: relative;
-  }
-  .modal-header .close {
-    margin: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 100;
-  }
-
-  .sch_modal {
-    background-color: $theme-bgcolor;
-    color: $white;
-    display: flex;
-    height: 100%;
-    padding: 1rem;
-    .sch_inner {
-      color: rgba($white, 0.8);
-      align-self: center;
-      .h4 {
-        color: $white;
-      }
+.sch_modal {
+  .h4 {
+    color: $theme-bgcolor;
+    i {
+      // font-size: 2rem;
+      font-weight: 700;
     }
   }
-
-  .sch_inner ul {
+  p {
+    text-align: justify;
+  }
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
     li {
       padding-left: 1.5rem;
       margin-bottom: 0.5rem;
       font-size: 0.9rem;
-      color: rgba($white, 0.8);
+      width: 50%;
+      // color: rgba($white, 0.8);
       &:before {
-        font-family: symbol !important;
-        content: '\a651';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: '\f069';
         float: left;
+        font-size: 0.6rem;
         margin-left: -1.4rem;
+        margin-top: 0.3rem;
       }
     }
   }
-
   .sch_form {
-    padding: 1.5rem;
     &_heading {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
     }
   }
+}
+
+.modal-backdrop {
+  background-color: $white;
+  &.show {
+    opacity: 0.97;
+  }
+}
+
+.modal-content {
+  box-shadow: 0 8px 60px 0 rgba($theme-bg-secondary, 0.22),
+    0 12px 90px 0 rgba($theme-bgcolor, 0.22);
+  border: none;
+}
+
+.modal-header {
+  padding: 0;
+  border-bottom: none;
+  .btn-close {
+    box-shadow: 0 8px 60px 0 rgba($theme-bg-secondary, 0.22),
+      0 12px 90px 0 rgba($theme-bgcolor, 0.22);
+    background-color: $theme-bgcolor;
+    margin: -1.2rem -1.2rem -1rem auto;
+    outline: none;
+    opacity: 1;
+    border-radius: 100%;
+    padding: 0.9rem 0.8rem 0.7rem;
+    border: 1px solid rgba($theme-bg-secondary, 0.11);
+    position: relative;
+    z-index: 1;
+    &:hover {
+      background-color: $theme-bg-secondary;
+      color: $white;
+    }
+  }
+}
+
+.modal-body {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .slider_area {

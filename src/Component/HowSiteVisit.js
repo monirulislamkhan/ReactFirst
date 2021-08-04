@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectForm from './MainForm';
+import MainForm from './MainForm';
 export const HowSiteVisit = () => {
   return (
     <>
@@ -20,7 +20,7 @@ export const HowSiteVisit = () => {
                   <li>Familiarity with neighborhood</li>
                 </ul>
                 <div className="sch_form">
-                  <ProjectForm />
+                  <MainForm />
                 </div>
               </div>
             </div>

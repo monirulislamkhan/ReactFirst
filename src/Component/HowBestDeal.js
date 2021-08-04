@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectForm from './MainForm';
+import MainForm from './MainForm';
 export const HowBestDeal = () => {
   return (
     <>
@@ -19,7 +19,7 @@ export const HowBestDeal = () => {
                   <li>Best unit in your budget</li>
                 </ul>
                 <div className="sch_form">
-                  <ProjectForm />
+                  <MainForm />
                 </div>
               </div>
             </div>

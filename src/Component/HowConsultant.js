@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectForm from './MainForm';
+import MainForm from './MainForm';
 export const HowConsultant = () => {
   return (
     <>
@@ -21,7 +21,7 @@ export const HowConsultant = () => {
                   <li>Location Map</li>
                 </ul>
                 <div className="sch_form">
-                  <ProjectForm />
+                  <MainForm />
                 </div>
               </div>
             </div>
