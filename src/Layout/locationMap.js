@@ -11,8 +11,8 @@ const locationMap = (props) => {
   });
   const mapOptions = {
     center: {
-      lat: 28.515117,
-      lng: 76.995763
+      lat: 28.411053,
+      lng: 77.043217
     },
     zoom: 4
   };
@@ -32,29 +32,7 @@ const locationMap = (props) => {
             <div className="col-md-12">
               <h1>{`Location Map -  ${window.name} Sector 108`}</h1>
               <div className="hm_map">
-                <ul>
-                  <li><input type="checkbox" name="mytype" className="chkbox" id="school" value="school" /><label for="school">School</label></li>
-                  <li><input type="checkbox" name="mytype" className="chkbox" id="restaurant" value="restaurant" /><label for="restaurant" >Restaurant</label></li>
-                  <li><input type="checkbox" name="mytype" className="chkbox" id="hospital" value="hospital" /><label for="hospital" >Hospital</label></li>
-                  <li><input type="checkbox" name="mytype" className="chkbox" id="bus_station" value="bus_station" /><label for="bus_station" >Bus Stopedge</label></li>
-                  <li><input type="checkbox" name="mytype" className="chkbox" id="park" value="park" /><label for="park" >Park</label></li>
-                  <li><input type="checkbox" name="mytype" className="chkbox" id="bank" value="bank" /><label for="bank" >Bank</label></li>
-                  <li><input type="checkbox" name="mytype" className="chkbox" id="bar" value="bar" /><label for="bar" >Bar</label></li>
-                  <li><input type="checkbox" name="mytype" className="chkbox" id="movie_theater" value="movie_theater" /><label for="movie_theater" >Movie Theater</label></li>
-                  <li><input type="checkbox" name="mytype" className="chkbox" id="night_club" value="night_club" /><label for="night_club" >Night Club</label></li>
-                  <li><input type="checkbox" name="mytype" className="chkbox" id="supermarket" value="supermarket" /><label for="supermarket" >Super Market</label></li>
-                  <li><input type="checkbox" name="mytype" className="chkbox" id="gym" value="gym" /><label for="gym" >Gym</label></li>
-                  <li><input type="checkbox" name="mytype" className="chkbox" id="atm" value="atm" /><label for="atm" >ATM</label></li>
-                </ul>
-                <input id="address" type="hidden" value="Sector 108 Gurugram" onload="showMap();" />
-                <input id="pic" type="hidden" value="" onload="showMap();" />
                 <div id="map"></div>
-                <input type="text" id="latitude" style={{ display: 'none' }} placeholder="Latitude" />
-                <input type="text" id="longitude" style={{ display: 'none' }} placeholder="Longitude" />
-                <input type="text" id="lat" value="28.515117" style={{ display: 'none' }} />
-                < input type="text" id="long" value="76.995763" style={{ display: 'none' }} />
-                <input type="button" id="show_btn" value="show  markers" onClick="showMarkers();" style={{ display: 'none' }} />
-                <div id="test"></div>
               </div>
             </div>
           </div>
