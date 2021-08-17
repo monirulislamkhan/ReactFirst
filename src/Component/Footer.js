@@ -1,6 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import MainForm from './MainForm';
+import WeDeliver from '../Component/WeDeliver';
+
+import $ from "jquery";
+// import tawkTo from "tawkto-react";
+
 const Footer = () => {
+  // const tawkToPropertyId = '5d564ec377aa790be32f2580'
+  // const tawkToKey = 'a33be46f147009fc74816b1a735ae317f12653f7'
+  // useEffect(() => {
+  //   tawkTo(tawkToPropertyId, tawkToKey)
+  // }, []);
+
+  $(document).ready(function () {
+    $('.more_btn').on('click scroll', function (e) {
+      $('.display_popup').stop(true).slideToggle(20);
+    });
+
+    $(document).on('click scroll', function (e) {
+      if (!$(e.target).closest('.more_btn').length) {
+        $('.display_popup').stop(true).slideUp(20);
+      }
+    });
+  });
+
   return (
     <>
       <footer className="footer">
@@ -28,15 +52,30 @@ const Footer = () => {
 
       <div className="aside_btn">
         <ul>
-          <li className="xs_w-20"><button className="btn btn-primary btn-block more_btn"><i className="sym_options"></i></button></li>
-          <li className="xs_w-40"><Link className="btn btn-primary btn-block" to="" data-toggle="modal" data-target="#ftrForm">Enquire Now</Link></li>
+          <li className="xs_w-20"><button className="btn btn-primary btn-block more_btn"><i className="fas fa-ellipsis-v"></i></button></li>
+          {/* <li className="xs_w-20"><button className="btn btn-primary btn-block" onClick={() => alert('hi')}><i className="fas fa-ellipsis-v"></i></button></li> */}
+          <li className="xs_w-40 d-grid"><Link className="btn btn-primary btn-block" to="" data-bs-toggle="modal" data-bs-target="#ftrForm">Enquire Now</Link></li>
         </ul>
       </div>
       <div className="display_popup">
         <ul>
-          <li><Link to="tel:+911149500008"><i className="sym_contact"></i></Link></li>
+          <li><Link to="tel:+911149500008"><i className="fas fa-phone-alt"></i></Link></li>
           <li><Link to="https://api.whatsapp.com/send?phone=+919999428963&amp;text=I'm%20interested%20in%20Sobha%20City%20Gurgaon%20Sector-108" rel="nofollow"><img src="images/whatsapp.svg" alt="Whatsapp" height="30" /></Link></li>
         </ul>
+      </div>
+      <div className="modal fade" id='ftrForm' tabIndex="-1" aria-hidden="true">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body">
+              <div className="h4 pb-3 text-center font-weight-bold">EXPRESS YOUR INTEREST</div>
+              <MainForm />
+              <WeDeliver />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )

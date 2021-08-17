@@ -1,6 +1,4 @@
 import React from 'react';
-
-
 const Banner = (props) => {
   return (
     <section className="bnr_sec">

@@ -59,7 +59,7 @@ const Home = (props) => {
             </figure>
             <div className='col-lg-7'>
               <div className='des_heading text-start'>
-                <h2 className='mb-2'>{`${window.name} Monirul`}</h2>
+                <h2 className='mb-2'>{`${window.name}`}</h2>
               </div>
               <p>
                 <strong>Sobha City Gurgaon</strong> – “Enjoy the life surrounded
@@ -218,11 +218,11 @@ const Home = (props) => {
               <div className='h4 mb-4'>Two Clubhouses</div>
             </div>
             <figure className='col-lg-6 col-md-6 mb-5'>
-              <img src='images/clubhouses-image1.jpg' alt='' />
+              <img className="img-fluid" src='images/clubhouses-image1.jpg' alt='' />
               <figcaption>Clubhouse Oval-1</figcaption>
             </figure>
             <figure className='col-lg-6 col-md-6 mb-5'>
-              <img src='images/clubhouses-image2.jpg' alt='' />
+              <img className="img-fluid" src='images/clubhouses-image2.jpg' alt='' />
               <figcaption>Clubhouse Oval-2</figcaption>
             </figure>
 

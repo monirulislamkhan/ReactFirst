@@ -1,4 +1,3 @@
-import React from 'react';
 const WeDelever = () => {
   return (
     <>
@@ -11,7 +10,6 @@ const WeDelever = () => {
           <li><i className="fas fa-rupee-sign"></i><span>Best<br /> Price</span></li>
         </ul>
       </div>
-      <div className="acp">Call will be Facilitated by Authorized CP</div>
     </>
   )
 }

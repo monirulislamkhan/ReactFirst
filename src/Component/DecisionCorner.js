@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import MainForm from './MainForm';
 export const DecisionCorner = () => {
   return (
@@ -11,7 +11,7 @@ export const DecisionCorner = () => {
         <div className="callb__left">
           <div className="callb__left__one">
             <div className="h6 font-weight-bold">Let Us Serve You Beyond</div>
-            <Link to={`javascript:void(Tawk_API.toggle())`} className="btn btn-primary">Ask Any Question</Link>
+            <button className="btn btn-primary">Ask Any Question</button>
           </div>
           <div className="callb__left__two">
             <div className="h6 font-weight-bold">Talk For Right Investment</div>
