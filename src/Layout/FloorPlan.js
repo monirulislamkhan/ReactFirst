@@ -10,7 +10,7 @@ const locationMap = (props) => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1>{`Location Map -  ${window.name} Sector 108`}</h1>
+              <h1>{`Floor Plan -  ${window.name} Sector 108`}</h1>
             </div>
           </div>
         </div>
