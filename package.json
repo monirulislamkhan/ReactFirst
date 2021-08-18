@@ -18,7 +18,7 @@
     "react-image-lightbox": "^5.1.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "swiper": "^6.8.1",
+    "swiper": "^6.8.2",
     "tawkto-react": "^2.0.3",
     "web-vitals": "^1.1.2"
   },
