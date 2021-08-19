@@ -1,4 +1,3 @@
-
 import Home from './Home';
 import Specifications from './Specifications';
 import PriceList from './PriceList';
@@ -6,10 +5,12 @@ import locationMap from './locationMap';
 import MasterPlan from './MasterPlan';
 import FloorPlan from './FloorPlan';
 import ElevationImages from './ElevationImages';
-import ConstrutionUpdate from './ConstrutionUpdate';
 import SampleFlat from './SampleFlat';
 import ThankYou from './ThankYou';
 import Disclaimer from './Disclaimer';
+import ConstructionUpdate from './ConstructionUpdate';
+import WhyInvest from './WhyInvest';
+import NotFoundPage from './NotFoundPage';
 
 export {
   Home,
@@ -19,8 +20,10 @@ export {
   MasterPlan,
   FloorPlan,
   ElevationImages,
-  ConstrutionUpdate,
   SampleFlat,
   ThankYou,
-  Disclaimer
-}
+  Disclaimer,
+  ConstructionUpdate,
+  WhyInvest,
+  NotFoundPage,
+};

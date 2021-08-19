@@ -988,7 +988,6 @@ label i {
 }
 
 .slider_area {
-  // overflow: hidden;
   position: relative;
   .slider-main {
     .swiper-button-next,
@@ -1015,11 +1014,6 @@ label i {
     }
   }
   .swiper-slide {
-    // font-size: 18px;
-    // background: #fff;
-    // display: flex;
-    // justify-content: center;
-    // align-items: flex-end;
     .inner {
       background-color: $white;
       display: flex;
@@ -1063,55 +1057,22 @@ label i {
     }
   }
 
-  .counting {
-    font-size: 1.3rem;
-    font-weight: 600;
-    position: absolute;
-    left: 49%;
-    bottom: 0.8rem;
-    .sta_img_value {
-      color: $theme-bgcolor;
-    }
-    @media (max-width: 991px) {
-      left: 0;
-    }
-  }
-  .swiper-pagination-progressbar {
-    bottom: 0 !important;
-    top: auto;
-  }
-
-  .swiper-container-horizontal > .swiper-pagination-progressbar {
-    top: auto;
-    bottom: 48px;
-  }
-  .swiper-container-horizontal > .swiper-pagination-progressbar {
+  .swiper-container-horizontal > .swiper-scrollbar {
     width: calc(50% - 11rem);
-    height: 4px;
+    // height: 4px;
     left: 55%;
-    top: 95%;
-    background-color: rgba($gray-400, 0.6);
+    top: 96%;
+    // background-color: rgba($gray-400, 0.6);
     @media (max-width: 991px) {
       left: 4rem;
       width: calc(100% - 10rem);
     }
   }
-  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-    width: 100%;
-    background-color: $theme-bgcolor;
-  }
-
-  .counter,
-  .counter span {
-    position: relative;
-  }
-  .counter .next,
-  .counter .count {
-    position: absolute;
-  }
-  .counter .next {
-    transform: translateY(-12px);
-    left: 0;
+  .swiper-pagination-fraction,
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    width: auto;
+    font-weight: 700;
+    left: calc(50% - 0rem);
   }
 }
 
@@ -1219,6 +1180,14 @@ label i {
       top: calc(50% - 20px);
     }
   }
+}
+
+.four04_con {
+  margin-top: 3rem;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .blog_sec {
