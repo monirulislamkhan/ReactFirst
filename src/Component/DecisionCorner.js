@@ -5,7 +5,7 @@ export const DecisionCorner = () => {
   return (
     <>
       <section className="callb">
-        <figure><img src="images/decision-corner.svg" className="img-fluid" alt="DECISION CORNER" /></figure>
+        <figure><img src="images/decision-corner.svg" width='406' height='200' className="img-fluid" alt="DECISION CORNER" /></figure>
         <div className="h3 font-weight-bold">DECISION CORNER</div>
         <div className="h4">Do You Want a deal of Investment? Just let us know!!</div>
         <div className="callb__left">

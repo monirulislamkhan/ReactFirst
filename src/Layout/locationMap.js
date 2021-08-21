@@ -6,7 +6,7 @@ import { DecisionCorner } from '../Component/DecisionCorner';
 import { Loader } from '@googlemaps/js-api-loader';
 const locationMap = (props) => {
   const loader = new Loader({
-    apiKey: 'AIzaSyDlZ-xZ5HRgV9z8VSKd2T5V4DvCOPfxqjA',
+    apiKey: 'AIzaSyDJIz0yVbcgq6o9Ou03wkge1oLJ19_NHa0',
     version: 'weekly',
     libraries: ['places'],
   });

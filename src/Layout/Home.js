@@ -10,34 +10,45 @@ import { HowConsultant } from '../Component/HowConsultant';
 import { HowSiteVisit } from '../Component/HowSiteVisit';
 import { HowBestDeal } from '../Component/HowBestDeal';
 import { DecisionCorner } from '../Component/DecisionCorner';
-// import Wedelever from '../Component/WeDeliver';
 import Footer from '../Component/Footer';
+
+import SwiperCore, { Navigation, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+SwiperCore.use([Navigation, A11y]);
 
 const Home = (props) => {
   const priceData = [
     {
       unittype: '2 BHK',
-      typename: 'Tower : A1 | Unit Type : A',
+      typename: 'Tower : A3 & A4 | Unit Type : A',
       sizes: '1381 Sq. Ft.',
-      price: '1.20',
-    },
-    {
-      unittype: '3 BHK',
-      typename: 'Tower : A1 B1 | Unit Type : B',
-      sizes: '1711 Sq. Ft.',
       price: '1.52',
     },
     {
       unittype: '3 BHK',
-      typename: 'Tower : B3 | Unit Type : B',
+      typename: 'Tower : A3 & A4 | Unit Type : B',
       sizes: '1711 Sq. Ft.',
-      price: '1.69',
+      price: '1.84',
     },
     {
       unittype: '3 BHK',
-      typename: 'Tower : B1 | Unit Type : C',
+      typename: 'Tower : B3 & B4 | Unit Type : C',
       sizes: '2003 Sq. Ft.',
-      price: '1.78',
+      price: '2.15',
+    },
+    {
+      unittype: '3 BHK',
+      typename: 'Tower : C5 & C6 | Unit Type : D',
+      sizes: '2072 Sq. Ft.',
+      price: '2.35',
+    },
+    {
+      unittype: '3 BHK',
+      typename: 'Tower : C5 & C6 | Unit Type : E',
+      sizes: '2343 Sq. Ft.',
+      price: '2.60',
     },
   ];
 
@@ -58,11 +69,11 @@ const Home = (props) => {
         <div className='container'>
           <div className='row mb-5'>
             <figure className='col-lg-5'>
-              <img src='images/overview-01.jpg' alt='' className='img-fluid' />
+              <img src='images/overview-01.jpg' width='600' height='550' alt='Overview' className='img-fluid' />
             </figure>
             <div className='col-lg-7'>
               <div className='des_heading text-start'>
-                <h2 className='mb-2'>{`${window.name}`}</h2>
+                <h2 className='mb-2'>{`${window.name} Sector 108`}</h2>
               </div>
               <p>
                 <strong>Sobha City Gurgaon</strong> – “Enjoy the life surrounded
@@ -94,6 +105,7 @@ const Home = (props) => {
           <div className='row mb-5'>
             <figure className='col-lg-5 order-lg-1'>
               <img
+                width='418' height='334'
                 src='images/overview-02.jpg'
                 alt={window.name}
                 className='img-fluid'
@@ -134,17 +146,32 @@ const Home = (props) => {
                 {window.name} - Price List
               </h2>
               <div className='row justify-content-center'>
-                {priceData.map((article, index) => {
-                  return (
-                    <Prices
-                      key={index}
-                      unittype={article.unittype}
-                      typename={article.typename}
-                      sizes={article.sizes}
-                      price={article.price}
-                    />
-                  );
-                })}
+                <div className="col-lg-12">
+                  <Swiper
+                    spaceBetween={30}
+                    slidesPerView={1}
+                    navigation={{ clickable: true }}
+                    breakpoints={{
+                      "640": {
+                        "slidesPerView": 2
+                      },
+                      "768": {
+                        "slidesPerView": 3
+                      },
+                      "1024": {
+                        "slidesPerView": 4
+                      }
+                    }}
+                  >
+                    {priceData.map((article, index) => {
+                      return (
+                        <SwiperSlide key={index}>
+                          <Prices unittype={article.unittype} typename={article.typename} sizes={article.sizes} price={article.price} />
+                        </SwiperSlide>
+                      )
+                    })}
+                  </Swiper>
+                </div>
               </div>
             </div>
           </div>
@@ -248,6 +275,7 @@ const Home = (props) => {
             </div>
             <figure className='col-lg-6 col-md-6 mb-5'>
               <img
+                width='590' height='330'
                 className='img-fluid'
                 src='images/clubhouses-image1.jpg'
                 alt=''
@@ -256,6 +284,7 @@ const Home = (props) => {
             </figure>
             <figure className='col-lg-6 col-md-6 mb-5'>
               <img
+                width='590' height='330'
                 className='img-fluid'
                 src='images/clubhouses-image2.jpg'
                 alt=''
@@ -310,7 +339,7 @@ const Home = (props) => {
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
               <div className='ameni_item'>
-                <i className='sym_amphitheater'></i> Camping Ground
+                <i class="fas fa-campground"></i> Camping Ground
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
@@ -353,6 +382,7 @@ const Home = (props) => {
             <div className='col-lg-6'>
               <div className='new_list'>
                 <img
+                  width='404' height='303'
                   src='images/constructions-thumb.jpg'
                   className='img-fluid'
                   alt={`Construction update of ${window.name}`}
@@ -372,6 +402,7 @@ const Home = (props) => {
             <div className='col-lg-6 mt-lg-0 mt-5'>
               <div className='new_list last'>
                 <img
+                  width='404' height='303'
                   src='images/sample-flat-thumb.jpg'
                   className='img-fluid'
                   alt={`Sample flats of ${window.name}`}
@@ -395,6 +426,7 @@ const Home = (props) => {
         <div className='row gx-0'>
           <figure className='col-lg-6'>
             <img
+              width='1000' height='650'
               src='images/sobha-city-gurgaon-location-advantage.jpg'
               className='img-fluid'
               alt='Best Location for Seamless Connectivity'
@@ -488,7 +520,7 @@ const Home = (props) => {
                       <p itemProp='text' className='albos-qna-answer'>
                         Ans. Many reputed government & private banks are
                         providing home loan facility for Sobha City Dwara
-                        Expressway.{' '}
+                        Expressway.
                       </p>
                     </div>
                   </div>
@@ -605,7 +637,6 @@ const Home = (props) => {
                         </p>
                         <p>
                           <strong>
-                            {' '}
                             So an investment point of view, Sobha City Gurgaon
                             Apartments is the lucrative option which offers: -
                           </strong>
@@ -617,7 +648,7 @@ const Home = (props) => {
                           </li>
                           <li>
                             State-of-the-art amenities wisely executed in one
-                            place{' '}
+                            place
                           </li>
                           <li>
                             Planned at the entrance of Dwarka Expressway,so
@@ -626,7 +657,7 @@ const Home = (props) => {
                           <li>Closer to IGI Airport, NH 8</li>
                           <li>
                             Next to the natural surroundings of Delhi reserved
-                            Greens area{' '}
+                            Greens area
                           </li>
                         </ul>
                       </div>
@@ -678,6 +709,7 @@ const Home = (props) => {
                 <div className='row no-gutters'>
                   <figure className='col-md-6'>
                     <img
+                      width='550' height='200'
                       src='images/property-in-dwarka-ads.jpg'
                       alt='GET YOUR FREE EUROPE TRIP ON THE SPOT'
                       className='img-fluid w-100'

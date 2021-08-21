@@ -29,6 +29,7 @@ const MasterPlan = () => {
                   data-caption={`Master Plan - ${window.name} `}
                 >
                   <img
+                    width='1100' height='700'
                     src='images/sobha-city-master-plan.jpg'
                     className='img-fluid'
                     alt={`Master Plan - ${window.name} `}

@@ -6,11 +6,21 @@ function Disclaimer() {
   return (
     <>
       <Helmet>
-        <title></title>
-        <meta name='description' content='' />
-        <link rel='canonical' href='/.html' />
+        <title>Thank You</title>
+        <link rel='canonical' href='/thank-you.html' />
       </Helmet>
-      <div className='container'>Thank You</div>
+      <section className="dis_con">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="thank">
+                <div className="thank-you">Thank You</div>
+                <p>We at www.sobhacitygurgaon.org.in would like to thank you for your interest in our services and contacting us.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

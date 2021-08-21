@@ -6,10 +6,7 @@ import { DecisionCorner } from '../Component/DecisionCorner';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
-
-const images = [
-  'images/sobha-city-master-plan.jpg'
-];
+const images = ['images/sobha-city-master-plan.jpg'];
 
 class MasterPlan extends Component {
   constructor(props) {
@@ -24,13 +21,20 @@ class MasterPlan extends Component {
     return (
       <>
         <Header />
-        <section className="inner_bg">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
+        <section className='inner_bg'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-md-12'>
                 <h1>{`Location Map -  ${window.name} Sector 108`}</h1>
-                <div className="locality">
-                  <img src='/images/sobha-city-master-plan.jpg' alt={`Master Plan - ${window.name}`} className="img-fluid" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
+                <div className='locality'>
+                  <img
+                    src='/images/sobha-city-master-plan.jpg'
+                    alt={`Master Plan - ${window.name}`}
+                    className='img-fluid'
+                    onClick={() =>
+                      this.setState({ isOpen: true, photoIndex: 0 })
+                    }
+                  />
                   {/* <Link to="/images/sobha-city-master-plan.jpg" data-fancybox="gallery" data-caption={`Master Plan - ${window.name} `}><img src="images/sobha-city-master-plan.jpg" className="img-fluid" alt={`Master Plan - ${window.name} `} /></Link> */}
                 </div>
               </div>
@@ -43,9 +47,10 @@ class MasterPlan extends Component {
             // nextSrc={images[(photoIndex + 1) % images.length]}
             // prevSrc={images[(photoIndex + images.length - 1) % images.length]}
             onCloseRequest={() => this.setState({ isOpen: false })}
-            onMovePrevRequest={() => this.setState({
-              photoIndex: (photoIndex + images.length - 1) % images.length,
-            })
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + images.length - 1) % images.length,
+              })
             }
             onMoveNextRequest={() =>
               this.setState({

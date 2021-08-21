@@ -29,6 +29,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-01.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-01'
@@ -41,6 +42,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-02.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-02'
@@ -53,6 +55,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-03.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-03'
@@ -65,6 +68,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-04.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-04'
@@ -77,6 +81,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-05.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-05'
@@ -89,6 +94,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-06.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-06'
@@ -101,6 +107,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-07.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-07'
@@ -113,6 +120,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-08.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-08'
@@ -125,6 +133,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-09.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-09'
@@ -137,6 +146,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-10.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-10'
@@ -149,6 +159,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-11.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-11'
@@ -161,6 +172,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-12.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-12'
@@ -173,6 +185,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-13.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-13'
@@ -185,6 +198,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-14.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-14'
@@ -197,6 +211,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-15.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-15'
@@ -209,6 +224,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-16.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-16'
@@ -221,6 +237,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-17.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-17'
@@ -233,6 +250,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-18.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-18'
@@ -245,6 +263,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-19.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-19'
@@ -257,6 +276,7 @@ const locationMap = (props) => {
                       data-fancybox='gallery'
                     >
                       <img
+                        width='700' height='550'
                         src='images/gallery/ei/ei-20.jpg'
                         className='img-fluid'
                         alt='sobha-city-ei-20'

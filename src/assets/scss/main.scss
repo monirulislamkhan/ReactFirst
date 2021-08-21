@@ -15,6 +15,7 @@
 .modal {
   z-index: 10000000000;
 }
+
 .dropdown-item {
   padding: 0.25rem 1rem;
 }
@@ -50,8 +51,8 @@ h4,
   padding-right: 1rem;
 }
 
-.navbar-dark .navbar-nav .show > .nav-link,
-.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
   background-color: $theme-bgcolor;
@@ -80,6 +81,12 @@ h4,
   color: $white;
   text-align: center;
   margin-bottom: 2rem;
+
+  @media (max-width:414px) {
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
 }
 
 .p_tit h1,
@@ -94,6 +101,10 @@ h4,
 
 .p_det {
   color: $white;
+
+  p {
+    text-align: left;
+  }
 }
 
 .p_det span {
@@ -114,6 +125,10 @@ h4,
 .config_item {
   margin-bottom: 2rem;
   font-weight: 600;
+
+  p {
+    text-align: left;
+  }
 }
 
 .config_item i {
@@ -197,6 +212,7 @@ label i {
 .prce_list {
   padding: 3rem 0 4rem;
   background-color: rgba($theme-bgcolor, 0.2);
+
   .prclist {
     background-color: rgba($white, 0.4);
     margin-bottom: 3rem;
@@ -210,10 +226,12 @@ label i {
     font-weight: 700;
     background-color: rgba($white, 0.5);
     padding: 0.9rem 0;
+
     sup,
     sub {
       font-size: 1rem;
     }
+
     span,
     small {
       display: block;
@@ -233,10 +251,12 @@ label i {
     font-weight: 600;
     font-size: 1.9rem;
   }
+
   .floorname1 {
     padding: 0.9rem 0;
     font-size: 1.1rem;
     font-weight: 600;
+
     small {
       display: block;
     }
@@ -254,30 +274,39 @@ label i {
     padding: 0.8rem 0;
   }
 }
+
 .location_advan {
   background-color: rgba($theme-bg-black, 0.9);
   margin-bottom: 2rem;
   padding: 1px;
+
   figure {
     margin-bottom: 0;
+
     img {
       height: 100%;
       width: 100%;
     }
   }
+
   .advan_inner {
     padding: 2rem;
+
     @media (max-width: 960px) {
       padding: 1rem;
     }
+
     color: $theme-bgcolor;
+
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
+
       li {
         margin-bottom: 0.7rem;
         padding-left: 2rem;
+
         &::before {
           float: left;
           margin-left: -1.9rem;
@@ -294,9 +323,11 @@ label i {
   // background: rgba($gray-900, 0.95);
   padding: 3rem 0;
   margin-bottom: 2rem;
+
   .no_bdr {
     border: none;
   }
+
   .consul__inner {
     border-left: 1px solid $theme-bgcolor;
     border-right: 1px solid $theme-bgcolor;
@@ -307,15 +338,18 @@ label i {
     font-size: 1.1rem;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
+
     a {
       text-decoration: none;
       color: $theme-bgcolor;
       display: block;
+
       i {
         font-size: 3.5rem;
         margin-bottom: 0.5rem;
       }
     }
+
     span {
       margin-top: 0.5rem;
       display: block;
@@ -324,9 +358,10 @@ label i {
       // color: $white;
     }
   }
+
   @media (max-width: 767px) {
     .consul__inner {
-      border: 1px solid $theme-bg-light;
+      border: 1px solid rgba($theme-bg-secondary, 0.9);
     }
   }
 }
@@ -336,9 +371,11 @@ label i {
     list-style: none;
     margin: 0;
     padding: 0;
+
     li {
       margin-bottom: 0.7rem;
       padding-left: 2rem;
+
       &::before {
         float: left;
         margin-left: -1.9rem;
@@ -386,6 +423,7 @@ label i {
   position: relative;
   background-color: #fff;
   padding: 4rem 0 6rem;
+
   .custom-svg3 {
     top: -8rem;
     position: absolute;
@@ -394,6 +432,7 @@ label i {
 
   .new_list {
     position: relative;
+
     &::before {
       position: absolute;
       top: 0;
@@ -404,6 +443,7 @@ label i {
       clip-path: polygon(0 0, 0% 100%, 100% 100%);
       background-color: rgba(255, 255, 255, 0.7);
     }
+
     &::after {
       position: absolute;
       top: 1rem;
@@ -413,6 +453,7 @@ label i {
       content: '';
       border: 1px solid #d1a659;
     }
+
     .inner_det {
       position: absolute;
       width: calc(100% - 5rem);
@@ -424,19 +465,23 @@ label i {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-end;
+
       .h5 {
         color: #000;
       }
     }
+
     &.last {
       &::before {
         clip-path: polygon(100% 0, 0% 100%, 100% 100%);
       }
+
       .inner_det {
         align-items: flex-end;
         text-align: right;
       }
     }
+
     @media (max-width: 991px) {
       &::after {
         top: 0.5rem;
@@ -444,6 +489,7 @@ label i {
         width: calc(100% - 1rem);
         height: calc(100% - 1rem);
       }
+
       .inner_det {
         width: calc(100% - 2rem);
         height: calc(100% - 2rem);
@@ -452,6 +498,7 @@ label i {
       }
     }
   }
+
   @media (max-width: 767px) {
     .h1 {
       font-size: 1.3rem;
@@ -459,9 +506,13 @@ label i {
   }
 }
 
+.about_dev {
+  padding: 4rem 0;
+}
+
 .inner_bg {
   background-color: $theme-bg-light;
-  padding: 4rem 0;
+  padding: 5rem 0 4rem;
 }
 
 .table-bordered th,
@@ -565,6 +616,10 @@ label i {
   background-color: $gray-900;
   padding: 3rem 0;
   text-align: center;
+
+  @media (max-width:991px) {
+    padding-bottom: 5rem;
+  }
 }
 
 .footer_con {
@@ -705,17 +760,21 @@ label i {
   border-top: 1px solid #dcdcdc;
   padding: 1rem 0.9rem;
   padding-left: 142px;
+
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+
     li {
       &.xs_w-20 {
         margin-right: 0.8rem;
       }
+
       &.xs_w-40 {
         width: 100%;
+
         .btn {
           padding-left: 0.1rem;
           padding-right: 0.1rem;
@@ -723,6 +782,7 @@ label i {
       }
     }
   }
+
   @media (min-width: 961px) {
     display: none !important;
   }
@@ -734,14 +794,17 @@ label i {
   bottom: 72px;
   z-index: 1200;
   display: none;
+
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
+
     li {
       list-style: none;
       margin-top: 0.5rem;
       padding: 0;
+
       a {
         display: block;
         background-color: $theme-bgcolor;
@@ -792,7 +855,7 @@ label i {
 
 @media (max-width: 960px) {
   .bnr_sec {
-    margin-top: 65px;
+    margin-top: 58px;
   }
 
   .bnr_sec {
@@ -881,19 +944,23 @@ label i {
   padding: 3rem 0;
   text-align: center;
   background-color: rgba($theme-bgcolor, 0.3);
+
   &__left {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
+
     &__one {
       padding: 1rem 1rem 0;
       border-right: 1px solid $theme-bgcolor;
     }
+
     &__two {
       padding: 1rem 1rem 0;
     }
   }
+
   @media (max-width: 375px) {
     .btn {
       font-size: 0.9rem;
@@ -906,14 +973,17 @@ label i {
 .sch_modal {
   .h4 {
     color: $theme-bgcolor;
+
     i {
       // font-size: 2rem;
       font-weight: 700;
     }
   }
+
   p {
     text-align: justify;
   }
+
   ul {
     list-style: none;
     margin: 0;
@@ -921,11 +991,13 @@ label i {
     margin-bottom: 1.5rem;
     display: flex;
     flex-wrap: wrap;
+
     li {
       padding-left: 1.5rem;
       margin-bottom: 0.5rem;
       font-size: 0.9rem;
       width: 50%;
+
       // color: rgba($white, 0.8);
       &:before {
         font-family: 'Font Awesome 5 Free';
@@ -938,6 +1010,7 @@ label i {
       }
     }
   }
+
   .sch_form {
     &_heading {
       font-size: 1.2rem;
@@ -948,6 +1021,7 @@ label i {
 
 .modal-backdrop {
   background-color: $white;
+
   &.show {
     opacity: 0.97;
   }
@@ -962,6 +1036,7 @@ label i {
 .modal-header {
   padding: 0;
   border-bottom: none;
+
   .btn-close {
     box-shadow: 0 8px 60px 0 rgba($theme-bg-secondary, 0.22),
       0 12px 90px 0 rgba($theme-bgcolor, 0.22);
@@ -974,6 +1049,7 @@ label i {
     border: 1px solid rgba($theme-bg-secondary, 0.11);
     position: relative;
     z-index: 1;
+
     &:hover {
       background-color: $theme-bg-secondary;
       color: $white;
@@ -989,7 +1065,9 @@ label i {
 
 .slider_area {
   position: relative;
+
   .slider-main {
+
     .swiper-button-next,
     .swiper-button-prev {
       bottom: 0 !important;
@@ -997,26 +1075,32 @@ label i {
       background-color: rgba($black, 0.8);
       padding: 1.3rem;
       color: $theme-bgcolor;
+
       &::after {
         font-size: 1.2rem;
         font-weight: 700;
       }
     }
+
     &.swiper-container {
       padding-bottom: 4rem;
+
       .swiper-button-prev {
         right: 3rem;
         left: auto;
       }
+
       .swiper-button-next {
         right: 0;
       }
     }
   }
+
   .swiper-slide {
     .inner {
       background-color: $white;
       display: flex;
+
       &__left {
         display: flex;
         flex-wrap: wrap;
@@ -1028,16 +1112,20 @@ label i {
         // border: rgba($theme-bgcolor, 0.5) solid 1px;
         width: 40%;
       }
+
       &__right {
         width: 60%;
+
         img {
           min-height: 500px;
           max-height: 500px;
           width: 100%;
         }
       }
+
       @media (max-width: 991px) {
         flex-wrap: wrap;
+
         &__left {
           width: 100%;
           text-align: left;
@@ -1046,8 +1134,10 @@ label i {
           padding: 0.5rem 1rem 0;
           border: rgba($theme-bgcolor, 0.5) solid 1px;
         }
+
         &__right {
           width: 100%;
+
           img {
             min-height: 300px;
             max-height: 300px;
@@ -1057,22 +1147,28 @@ label i {
     }
   }
 
-  .swiper-container-horizontal > .swiper-scrollbar {
+  .swiper-container-horizontal>.swiper-scrollbar {
     width: calc(50% - 11rem);
     // height: 4px;
     left: 55%;
     top: 96%;
+
     // background-color: rgba($gray-400, 0.6);
     @media (max-width: 991px) {
       left: 4rem;
       width: calc(100% - 10rem);
     }
   }
+
   .swiper-pagination-fraction,
-  .swiper-container-horizontal > .swiper-pagination-bullets {
+  .swiper-container-horizontal>.swiper-pagination-bullets {
     width: auto;
     font-weight: 700;
     left: calc(50% - 0rem);
+
+    @media (max-width:991px) {
+      left: 0;
+    }
   }
 }
 
@@ -1083,6 +1179,7 @@ label i {
 }
 
 @mixin form_common {
+
   // .assure_call {
   //   font-size: 0.8rem;
   //   text-align: center;
@@ -1093,12 +1190,14 @@ label i {
     overflow-y: hidden;
     margin-top: 0.5rem;
     position: relative;
+
     .our_pro {
       text-align: center;
       font-size: 1.2rem;
       margin-bottom: 1rem;
       border-bottom: 1px dotted $theme-bgcolor;
       height: 12px;
+
       span {
         position: absolute;
         left: calc(50% - 65px);
@@ -1113,6 +1212,7 @@ label i {
       margin: 0;
       padding: 0;
       list-style: none;
+
       li {
         margin: 0;
         padding: 0;
@@ -1123,14 +1223,17 @@ label i {
         text-align: center;
         color: $black;
         border-left: 1px solid rgba($theme-bgcolor, 0.2);
+
         &::first-child {
           border: none;
         }
+
         i {
           display: block;
           font-size: 2rem;
           margin-bottom: 0.5rem;
         }
+
         span {
           font-size: 0.7rem;
           line-height: 100%;
@@ -1147,16 +1250,20 @@ label i {
 
 .adsarea {
   margin-top: 3rem;
+
   .ads_inner {
     position: relative;
     border: rgba(209, 166, 89, 0.3) solid 2px;
+
     &:hover {
       border: #d1a659 solid 2px;
     }
+
     figure {
       margin-bottom: 0;
     }
   }
+
   .txt_inner {
     display: flex;
     flex-direction: column;
@@ -1166,14 +1273,17 @@ label i {
     position: relative;
     padding: 1rem;
     padding-right: 3.5rem;
+
     .h3 {
       font-size: 1.5rem;
       color: #007bff;
       font-weight: 500;
     }
+
     .h5 {
       font-size: 1.1rem;
     }
+
     .ads_btn {
       position: absolute;
       right: 1rem;
@@ -1193,34 +1303,42 @@ label i {
 .blog_sec {
   background-color: $white;
   padding: 3rem 0 5rem;
+
   .b_desc {
     font-weight: 500;
     font-size: larger;
     text-align: center;
   }
+
   .blog {
     display: flex;
     flex-wrap: wrap;
     margin-right: -1rem;
     margin-left: -1rem;
+
     &__list {
       width: calc(50% - 2rem);
       background-color: #fff;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       margin: 1rem;
       position: relative;
+
       &__inner {
         padding: 1.5rem;
+
         .auth {
           margin-bottom: 1rem;
+
           ul {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
+
             &:nth-child(2) {
               border-right: none;
             }
+
             li {
               padding-right: 0.5rem;
               margin-right: 0.5rem;
@@ -1229,16 +1347,20 @@ label i {
             }
           }
         }
+
         h3 {
           font-size: 1.3rem;
           color: $primary;
         }
+
         p {
           font-size: 1.1rem;
           color: $gray-600;
         }
+
         .readmore {
           color: $primary;
+
           i {
             font-weight: 900 !important;
             font-size: 0.75rem !important;
@@ -1247,14 +1369,18 @@ label i {
       }
     }
   }
+
   @media (max-width: 991px) {
     padding: 2rem 1rem 5rem;
+
     .h2 {
       font-size: 2rem;
     }
+
     .b_desc {
       text-align: center;
     }
+
     .blog__list {
       width: 100% !important;
     }
