@@ -11,7 +11,9 @@ import { HowSiteVisit } from '../Component/HowSiteVisit';
 import { HowBestDeal } from '../Component/HowBestDeal';
 import { DecisionCorner } from '../Component/DecisionCorner';
 import Footer from '../Component/Footer';
-
+import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+import '@fortawesome/fontawesome-free/scss/regular.scss';
+import '@fortawesome/fontawesome-free/scss/solid.scss';
 import SwiperCore, { Navigation, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
@@ -339,7 +341,9 @@ const Home = (props) => {
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
               <div className='ameni_item'>
-                <i class="fas fa-campground"></i> Camping Ground
+                <i className="fas fa-campground"></i>
+                {/* <FontAwesomeIcon icon={["fal", "coffee"]} /> */}
+                Camping Ground
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
