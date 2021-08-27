@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import { Helmet } from 'react-helmet';
 import Header from '../Component/Header';
 import Banner from '../Component/Banner';
@@ -54,6 +55,10 @@ const Home = (props) => {
     },
   ];
 
+  axios.get(`http://tatahousingnewproject.com/admin/wp-json/v1/GetHomePageBlog`).then(response => {
+    document.getElementById('blog-sec').innerHTML = response.data;
+  });
+
   return (
     <>
       <Helmet>
@@ -71,7 +76,7 @@ const Home = (props) => {
         <div className='container'>
           <div className='row mb-5'>
             <figure className='col-lg-5'>
-              <img src='images/overview-01.jpg' width='600' height='550' alt='Overview' className='img-fluid' />
+              <img src='images/overview-01.webp' width='600' height='550' alt='Overview' className='img-fluid' />
             </figure>
             <div className='col-lg-7'>
               <div className='des_heading text-start'>
@@ -108,7 +113,7 @@ const Home = (props) => {
             <figure className='col-lg-5 order-lg-1'>
               <img
                 width='418' height='334'
-                src='images/overview-02.jpg'
+                src='images/overview-02.webp'
                 alt={window.name}
                 className='img-fluid'
               />
@@ -279,7 +284,7 @@ const Home = (props) => {
               <img
                 width='590' height='330'
                 className='img-fluid'
-                src='images/clubhouses-image1.jpg'
+                src='images/clubhouses-image1.webp'
                 alt=''
               />
               <figcaption>Clubhouse Oval-1</figcaption>
@@ -288,7 +293,7 @@ const Home = (props) => {
               <img
                 width='590' height='330'
                 className='img-fluid'
-                src='images/clubhouses-image2.jpg'
+                src='images/clubhouses-image2.webp'
                 alt=''
               />
               <figcaption>Clubhouse Oval-2</figcaption>
@@ -387,7 +392,7 @@ const Home = (props) => {
               <div className='new_list'>
                 <img
                   width='404' height='303'
-                  src='images/constructions-thumb.jpg'
+                  src='images/constructions-thumb.webp'
                   className='img-fluid'
                   alt={`Construction update of ${window.name}`}
                 />
@@ -407,7 +412,7 @@ const Home = (props) => {
               <div className='new_list last'>
                 <img
                   width='404' height='303'
-                  src='images/sample-flat-thumb.jpg'
+                  src='images/sample-flat-thumb.webp'
                   className='img-fluid'
                   alt={`Sample flats of ${window.name}`}
                 />
@@ -431,7 +436,7 @@ const Home = (props) => {
           <figure className='col-lg-6'>
             <img
               width='1000' height='650'
-              src='images/sobha-city-gurgaon-location-advantage.jpg'
+              src='images/sobha-city-gurgaon-location-advantage.webp'
               className='img-fluid'
               alt='Best Location for Seamless Connectivity'
             />
@@ -714,7 +719,7 @@ const Home = (props) => {
                   <figure className='col-md-6'>
                     <img
                       width='550' height='200'
-                      src='images/property-in-dwarka-ads.jpg'
+                      src='images/property-in-dwarka-ads.webp'
                       alt='GET YOUR FREE EUROPE TRIP ON THE SPOT'
                       className='img-fluid w-100'
                     />
@@ -756,121 +761,14 @@ const Home = (props) => {
               </p>
             </div>
             <div className='col-lg-12'>
-              <div className='blog'>
-                <div className='blog__list'>
-                  <Link
-                    to='http://www.sobhacitygurgaon.org.in/blog/what-all-benefits-you-can-hope-for-in-under-construction-property-sobha-city-gurgaon'
-                    className='stretched-link'
-                    target='_blank'
-                  ></Link>
-                  <div className='blog__list__inner'>
-                    <h3>
-                      What all benefits you can hope for in under construction
-                      property Sobha city Gurgaon?
-                    </h3>
-                    <div className='auth'>
-                      <ul>
-                        <li>Author</li>
-                        <li>Jun, 16, 2021</li>
-                      </ul>
-                    </div>
-                    <p>
-                      Under Construction projects are better in terms of quality
-                      and cost because one can have a check on the quality
-                      development where they ...&nbsp;
-                    </p>
-                    <div className='readmore'>
-                      Continue Reading <i className='sym_arrow-right'></i>
-                    </div>
-                  </div>
-                </div>
-                <div className='blog__list'>
-                  <Link
-                    to='http://www.sobhacitygurgaon.org.in/blog/why-smart-design-is-an-important-criterion-for-selecting-your-home'
-                    className='stretched-link'
-                    target='_blank'
-                  ></Link>
-                  <div className='blog__list__inner'>
-                    <h3>
-                      Why Smart Design Is An Important Criterion For Selecting
-                      Your Home!
-                    </h3>
-                    <div className='auth'>
-                      <ul>
-                        <li>Author</li>
-                        <li>Jun, 11, 2021</li>
-                      </ul>
-                    </div>
+              <div className='blog' id="blog-sec">
 
-                    <p>
-                      When you are looking for your dream home in Gurgaon, you
-                      look out for wide range of different features like luxury
-                      amenities, accessibi...&nbsp;
-                    </p>
-                    <div className='readmore'>
-                      Continue Reading <i className='sym_arrow-right'></i>
-                    </div>
-                  </div>
-                </div>
-                <div className='blog__list'>
-                  <Link
-                    to='http://www.sobhacitygurgaon.org.in/blog/how-many-things-you-should-consider-while-watching-a-sample-flats-in-sobha-city-gurgaon'
-                    className='stretched-link'
-                    target='_blank'
-                  ></Link>
-                  <div className='blog__list__inner'>
-                    <h3>
-                      How many things you should consider while watching a
-                      sample flats in Sobha City Gurgaon ?
-                    </h3>
-                    <div className='auth'>
-                      <ul>
-                        <li>Author</li>
-                        <li>Jun, 10, 2021</li>
-                      </ul>
-                    </div>
-
-                    <p>
-                      <strong>Sobha City Sample Flats</strong> are
-                      well-designed, captivating &amp; openhearted, just like
-                      what an actual apartment would loo...&nbsp;
-                    </p>
-                    <div className='readmore'>
-                      Continue Reading <i className='sym_arrow-right'></i>
-                    </div>
-                  </div>
-                </div>
-                <div className='blog__list'>
-                  <Link
-                    to='http://www.sobhacitygurgaon.org.in/blog/sobha-city-sector-108-from-the-eyes-of-site-visitors'
-                    className='stretched-link'
-                    target='_blank'
-                  ></Link>
-                  <div className='blog__list__inner'>
-                    <h3>
-                      Sobha City, Sector 108 : From the Eyes of Site Visitors!
-                    </h3>
-                    <div className='auth'>
-                      <ul>
-                        <li>Author</li>
-                        <li>May, 29, 2021</li>
-                      </ul>
-                    </div>
-
-                    <p>
-                      Sobha City Sector 108 Gurgaon is a residential project on
-                      39+ acres of land on Dwarka Expressway. This community is
-                      dedicated exclusive...&nbsp;
-                    </p>
-                    <div className='readmore'>
-                      Continue Reading <i className='sym_arrow-right'></i>
-                    </div>
-                  </div>
-                </div>
+                
+                
               </div>
               <div className='text-center mt-4'>
                 <Link
-                  to='http://www.sobhacitygurgaon.org.in/blog/'
+                  to='blog'
                   className='btn btn-outline-primary'
                 >
                   Read More Blogs <i className='sym_arrow-right'></i>

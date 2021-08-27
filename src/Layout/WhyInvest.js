@@ -46,7 +46,7 @@ const WhyInvest = (props) => {
       <main>
         <section
           className='bnr_sec_inner'
-          style={{ backgroundImage: 'url(images/main-banner.jpg)' }}
+          style={{ backgroundImage: 'url(images/main-banner.webp)' }}
         ></section>
         <section className='master_content'>
           <div className='container-fluid'>
@@ -65,7 +65,7 @@ const WhyInvest = (props) => {
                   <figure>
                     <img
                       width='1024' height='550'
-                      src='images/sub-banner.jpg'
+                      src='images/sub-banner.webp'
                       className='img-fluid'
                       alt='Properties in Dwarka Expressway with High ROI'
                     />
@@ -110,7 +110,7 @@ const WhyInvest = (props) => {
               <figure className='col-lg-6 order-lg-1'>
                 <img
                   width='540' height='540'
-                  src='images/01.jpg'
+                  src='images/01.webp'
                   className='img-fluid shadow'
                   alt='THE WHOLE PERSPECTIVE OF DWARKA EXPRESSWAY HAS CHANGED'
                 />
@@ -143,7 +143,7 @@ const WhyInvest = (props) => {
               <figure className='col-lg-6'>
                 <img
                   width='540' height='540'
-                  src='images/02.jpg'
+                  src='images/02.webp'
                   className='img-fluid shadow'
                   alt='EXCLUSIVE RANGE OF PREMIUM PROPERTIES WITH HIGH ROI'
                 />
@@ -192,7 +192,7 @@ const WhyInvest = (props) => {
               <figure className='col-lg-6 order-lg-1'>
                 <img
                   width='540' height='540'
-                  src='images/03.jpg'
+                  src='images/03.webp'
                   className='img-fluid shadow'
                   alt='DWARKA EXPRESSWAY PROPERTY ASSESSMENT'
                 />
@@ -265,7 +265,7 @@ const WhyInvest = (props) => {
               <figure className='col-lg-6'>
                 <img
                   width='540' height='540'
-                  src='images/04.jpg'
+                  src='images/04.webp'
                   className='img-fluid shadow'
                   alt='PROMINENT ZONE ALONG DWARKA EXPRESSWAY'
                 />
@@ -322,7 +322,7 @@ const WhyInvest = (props) => {
               <figure className='col-lg-6 order-lg-1'>
                 <img
                   width='540' height='540'
-                  src='images/05.jpg'
+                  src='images/05.webp'
                   className='img-fluid shadow'
                   alt='HIGH INFLUENCE OF COMMERCIAL SECTOR'
                 />
@@ -373,7 +373,7 @@ const WhyInvest = (props) => {
               <figure className='col-lg-6'>
                 <img
                   width='540' height='540'
-                  src='images/06.jpg'
+                  src='images/06.webp'
                   className='img-fluid shadow'
                   alt='CHERISH FEASIBLE CONNECTIVITY'
                 />

@@ -25,12 +25,12 @@ const locationMap = (props) => {
                 <div className='row'>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-01.jpg'
+                      href='images/gallery/ei/ei-01.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-01.jpg'
+                        src='images/gallery/ei/ei-01.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-01'
                       />
@@ -38,12 +38,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-02.jpg'
+                      href='images/gallery/ei/ei-02.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-02.jpg'
+                        src='images/gallery/ei/ei-02.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-02'
                       />
@@ -51,12 +51,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-03.jpg'
+                      href='images/gallery/ei/ei-03.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-03.jpg'
+                        src='images/gallery/ei/ei-03.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-03'
                       />
@@ -64,12 +64,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-04.jpg'
+                      href='images/gallery/ei/ei-04.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-04.jpg'
+                        src='images/gallery/ei/ei-04.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-04'
                       />
@@ -77,12 +77,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-05.jpg'
+                      href='images/gallery/ei/ei-05.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-05.jpg'
+                        src='images/gallery/ei/ei-05.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-05'
                       />
@@ -90,12 +90,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-06.jpg'
+                      href='images/gallery/ei/ei-06.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-06.jpg'
+                        src='images/gallery/ei/ei-06.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-06'
                       />
@@ -103,12 +103,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-07.jpg'
+                      href='images/gallery/ei/ei-07.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-07.jpg'
+                        src='images/gallery/ei/ei-07.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-07'
                       />
@@ -116,12 +116,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-08.jpg'
+                      href='images/gallery/ei/ei-08.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-08.jpg'
+                        src='images/gallery/ei/ei-08.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-08'
                       />
@@ -129,12 +129,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-09.jpg'
+                      href='images/gallery/ei/ei-09.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-09.jpg'
+                        src='images/gallery/ei/ei-09.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-09'
                       />
@@ -142,12 +142,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-10.jpg'
+                      href='images/gallery/ei/ei-10.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-10.jpg'
+                        src='images/gallery/ei/ei-10.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-10'
                       />
@@ -155,12 +155,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-11.jpg'
+                      href='images/gallery/ei/ei-11.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-11.jpg'
+                        src='images/gallery/ei/ei-11.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-11'
                       />
@@ -168,12 +168,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-12.jpg'
+                      href='images/gallery/ei/ei-12.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-12.jpg'
+                        src='images/gallery/ei/ei-12.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-12'
                       />
@@ -181,12 +181,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-13.jpg'
+                      href='images/gallery/ei/ei-13.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-13.jpg'
+                        src='images/gallery/ei/ei-13.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-13'
                       />
@@ -194,12 +194,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-14.jpg'
+                      href='images/gallery/ei/ei-14.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-14.jpg'
+                        src='images/gallery/ei/ei-14.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-14'
                       />
@@ -207,12 +207,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-15.jpg'
+                      href='images/gallery/ei/ei-15.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-15.jpg'
+                        src='images/gallery/ei/ei-15.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-15'
                       />
@@ -220,12 +220,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-16.jpg'
+                      href='images/gallery/ei/ei-16.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-16.jpg'
+                        src='images/gallery/ei/ei-16.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-16'
                       />
@@ -233,12 +233,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-17.jpg'
+                      href='images/gallery/ei/ei-17.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-17.jpg'
+                        src='images/gallery/ei/ei-17.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-17'
                       />
@@ -246,12 +246,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-18.jpg'
+                      href='images/gallery/ei/ei-18.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-18.jpg'
+                        src='images/gallery/ei/ei-18.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-18'
                       />
@@ -259,12 +259,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-19.jpg'
+                      href='images/gallery/ei/ei-19.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-19.jpg'
+                        src='images/gallery/ei/ei-19.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-19'
                       />
@@ -272,12 +272,12 @@ const locationMap = (props) => {
                   </figure>
                   <figure className='col-lg-3 col-md-4 col-sm-6 flr_list'>
                     <a
-                      href='images/gallery/ei/ei-20.jpg'
+                      href='images/gallery/ei/ei-20.webp'
                       data-fancybox='gallery'
                     >
                       <img
                         width='700' height='550'
-                        src='images/gallery/ei/ei-20.jpg'
+                        src='images/gallery/ei/ei-20.webp'
                         className='img-fluid'
                         alt='sobha-city-ei-20'
                       />

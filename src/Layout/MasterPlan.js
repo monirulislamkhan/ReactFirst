@@ -24,13 +24,13 @@ const MasterPlan = () => {
               <h1>{`Master Plan -  ${window.name} Sector 108`}</h1>
               <div className='locality'>
                 <a
-                  href='images/sobha-city-master-plan.jpg'
+                  href='images/sobha-city-master-plan.webp'
                   data-fancybox='Master Plan'
                   data-caption={`Master Plan - ${window.name} `}
                 >
                   <img
                     width='1100' height='700'
-                    src='images/sobha-city-master-plan.jpg'
+                    src='images/sobha-city-master-plan.webp'
                     className='img-fluid'
                     alt={`Master Plan - ${window.name} `}
                   />

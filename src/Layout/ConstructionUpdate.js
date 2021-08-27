@@ -48,13 +48,13 @@ const ConstructionUpdate = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/cu/tower-a1.jpg'
+                          href='images/gallery/cu/tower-a1.webp'
                           data-fancybox='gallery'
                           data-caption='Tower A1'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/cu/tower-a1.jpg'
+                            src='images/gallery/cu/tower-a1.webp'
                             className='img-fluid w-100'
                             alt='Tower A1'
                           />
@@ -73,13 +73,13 @@ const ConstructionUpdate = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/cu/tower-a2.jpg'
+                          href='images/gallery/cu/tower-a2.webp'
                           data-fancybox='gallery'
                           data-caption='Tower A2'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/cu/tower-a2.jpg'
+                            src='images/gallery/cu/tower-a2.webp'
                             className='img-fluid w-100'
                             alt='Tower A2'
                           />
@@ -99,13 +99,13 @@ const ConstructionUpdate = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/cu/tower-b1.jpg'
+                          href='images/gallery/cu/tower-b1.webp'
                           data-fancybox='gallery'
                           data-caption='Tower B1'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/cu/tower-b1.jpg'
+                            src='images/gallery/cu/tower-b1.webp'
                             className='img-fluid w-100'
                             alt='Tower B1'
                           />
@@ -124,13 +124,13 @@ const ConstructionUpdate = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/cu/tower-b2.jpg'
+                          href='images/gallery/cu/tower-b2.webp'
                           data-fancybox='gallery'
                           data-caption='Tower B2'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/cu/tower-b2.jpg'
+                            src='images/gallery/cu/tower-b2.webp'
                             className='img-fluid w-100'
                             alt='Tower B2'
                           />
@@ -149,13 +149,13 @@ const ConstructionUpdate = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/cu/tower-b3.jpg'
+                          href='images/gallery/cu/tower-b3.webp'
                           data-fancybox='gallery'
                           data-caption='Tower B3'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/cu/tower-b3.jpg'
+                            src='images/gallery/cu/tower-b3.webp'
                             className='img-fluid w-100'
                             alt='Tower B3'
                           />
@@ -175,13 +175,13 @@ const ConstructionUpdate = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/cu/tower-c1.jpg'
+                          href='images/gallery/cu/tower-c1.webp'
                           data-fancybox='gallery'
                           data-caption='Tower C1'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/cu/tower-c1.jpg'
+                            src='images/gallery/cu/tower-c1.webp'
                             className='img-fluid w-100'
                             alt='Tower C1'
                           />
@@ -200,13 +200,13 @@ const ConstructionUpdate = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/cu/tower-c2.jpg'
+                          href='images/gallery/cu/tower-c2.webp'
                           data-fancybox='gallery'
                           data-caption='Tower C2'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/cu/tower-c2.jpg'
+                            src='images/gallery/cu/tower-c2.webp'
                             className='img-fluid w-100'
                             alt='Tower C2'
                           />
@@ -225,13 +225,13 @@ const ConstructionUpdate = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/cu/tower-c3.jpg'
+                          href='images/gallery/cu/tower-c3.webp'
                           data-fancybox='gallery'
                           data-caption='Tower C3'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/cu/tower-c3.jpg'
+                            src='images/gallery/cu/tower-c3.webp'
                             className='img-fluid w-100'
                             alt='Tower C3'
                           />
@@ -250,13 +250,13 @@ const ConstructionUpdate = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/cu/club-oval-1.jpg'
+                          href='images/gallery/cu/club-oval-1.webp'
                           data-fancybox='gallery'
                           data-caption='Club Oval 1'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/cu/club-oval-1.jpg'
+                            src='images/gallery/cu/club-oval-1.webp'
                             className='img-fluid w-100'
                             alt='Club Oval 1'
                           />
@@ -277,13 +277,13 @@ const ConstructionUpdate = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/cu/cricket-ground.jpg'
+                          href='images/gallery/cu/cricket-ground.webp'
                           data-fancybox='gallery'
                           data-caption='Cricket Ground'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/cu/cricket-ground.jpg'
+                            src='images/gallery/cu/cricket-ground.webp'
                             className='img-fluid w-100'
                             alt='Cricket Ground'
                           />
@@ -302,13 +302,13 @@ const ConstructionUpdate = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/cu/ews.jpg'
+                          href='images/gallery/cu/ews.webp'
                           data-fancybox='gallery'
                           data-caption='EWS'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/cu/ews.jpg'
+                            src='images/gallery/cu/ews.webp'
                             className='img-fluid w-100'
                             alt='EWS'
                           />
@@ -327,13 +327,13 @@ const ConstructionUpdate = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/cu/stp.jpg'
+                          href='images/gallery/cu/stp.webp'
                           data-fancybox='gallery'
                           data-caption='STP'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/cu/stp.jpg'
+                            src='images/gallery/cu/stp.webp'
                             className='img-fluid w-100'
                             alt='STP'
                           />

@@ -44,4 +44,4 @@ export const DecisionCorner = () => {
     </>
   )
 }
-
+export default DecisionCorner;

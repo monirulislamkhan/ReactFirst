@@ -1,13 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-// import Header from '../Component/Header';
-// import Footer from '../Component/Footer';
-function Disclaimer() {
+function ThankYou() {
   return (
     <>
       <Helmet>
         <title>Thank You</title>
-        <link rel='canonical' href='/thank-you.html' />
       </Helmet>
       <section className="dis_con">
         <div className="container">
@@ -25,4 +22,4 @@ function Disclaimer() {
   );
 }
 
-export default Disclaimer;
+export default ThankYou;

@@ -3,7 +3,16 @@ import { Helmet } from 'react-helmet';
 import Header from '../Component/Header';
 import Footer from '../Component/Footer';
 import { DecisionCorner } from '../Component/DecisionCorner';
+
+
 const Home = (props) => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
   return (
     <>
       <Helmet>
@@ -14,8 +23,9 @@ const Home = (props) => {
         />
         <link rel='canonical' href='/specifications.html' />
       </Helmet>
+      
       <Header />
-      <section className='inner_bg'>
+      <section className='inner_bg scroll-to-top'>
         <div className='container'>
           <div className='row'>
             <div className='col-md-12'>

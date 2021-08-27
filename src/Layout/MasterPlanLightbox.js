@@ -6,7 +6,7 @@ import { DecisionCorner } from '../Component/DecisionCorner';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
-const images = ['images/sobha-city-master-plan.jpg'];
+const images = ['images/sobha-city-master-plan.webp'];
 
 class MasterPlan extends Component {
   constructor(props) {
@@ -28,14 +28,14 @@ class MasterPlan extends Component {
                 <h1>{`Location Map -  ${window.name} Sector 108`}</h1>
                 <div className='locality'>
                   <img
-                    src='/images/sobha-city-master-plan.jpg'
+                    src='/images/sobha-city-master-plan.webp'
                     alt={`Master Plan - ${window.name}`}
                     className='img-fluid'
                     onClick={() =>
                       this.setState({ isOpen: true, photoIndex: 0 })
                     }
                   />
-                  {/* <Link to="/images/sobha-city-master-plan.jpg" data-fancybox="gallery" data-caption={`Master Plan - ${window.name} `}><img src="images/sobha-city-master-plan.jpg" className="img-fluid" alt={`Master Plan - ${window.name} `} /></Link> */}
+                  {/* <Link to="/images/sobha-city-master-plan.webp" data-fancybox="gallery" data-caption={`Master Plan - ${window.name} `}><img src="images/sobha-city-master-plan.webp" className="img-fluid" alt={`Master Plan - ${window.name} `} /></Link> */}
                 </div>
               </div>
             </div>

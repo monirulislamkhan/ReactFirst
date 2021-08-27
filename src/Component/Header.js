@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
+
+import ScrollButton from './ScrollButton';
+
 const Header = (props) => {
   return (
     <nav className='navbar navbar-expand-lg fixed-top navbar-dark bg-dark'>
+    <ScrollButton />
       <Link className='navbar-brand' to='/'>
         <img src='/images/logo.svg' alt={window.name} height='50' width='153' />
       </Link>

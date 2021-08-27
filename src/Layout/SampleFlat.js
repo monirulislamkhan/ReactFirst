@@ -48,13 +48,13 @@ const SampleFlat = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/sa/sa-01.jpg'
+                          href='images/gallery/sa/sa-01.webp'
                           data-fancybox='gallery'
                           data-caption='Living Room'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/sa/sa-01.jpg'
+                            src='images/gallery/sa/sa-01.webp'
                             className='img-fluid w-100'
                             alt='Living Room'
                           />
@@ -74,13 +74,13 @@ const SampleFlat = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/sa/sa-02.jpg'
+                          href='images/gallery/sa/sa-02.webp'
                           data-fancybox='gallery'
                           data-caption='Living Room'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/sa/sa-02.jpg'
+                            src='images/gallery/sa/sa-02.webp'
                             className='img-fluid w-100'
                             alt='Living Room'
                           />
@@ -99,13 +99,13 @@ const SampleFlat = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/sa/sa-03.jpg'
+                          href='images/gallery/sa/sa-03.webp'
                           data-fancybox='gallery'
                           data-caption='Living Room'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/sa/sa-03.jpg'
+                            src='images/gallery/sa/sa-03.webp'
                             className='img-fluid w-100'
                             alt='Living Room'
                           />
@@ -126,13 +126,13 @@ const SampleFlat = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/sa/sa-04.jpg'
+                          href='images/gallery/sa/sa-04.webp'
                           data-fancybox='gallery'
                           data-caption='Living Room'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/sa/sa-04.jpg'
+                            src='images/gallery/sa/sa-04.webp'
                             className='img-fluid w-100'
                             alt='Living Room'
                           />
@@ -153,13 +153,13 @@ const SampleFlat = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/sa/sa-05.jpg'
+                          href='images/gallery/sa/sa-05.webp'
                           data-fancybox='gallery'
                           data-caption='Dining Area'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/sa/sa-05.jpg'
+                            src='images/gallery/sa/sa-05.webp'
                             className='img-fluid w-100'
                             alt='Dining Area'
                           />
@@ -179,13 +179,13 @@ const SampleFlat = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/sa/sa-06.jpg'
+                          href='images/gallery/sa/sa-06.webp'
                           data-fancybox='gallery'
                           data-caption='Dining Area'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/sa/sa-06.jpg'
+                            src='images/gallery/sa/sa-06.webp'
                             className='img-fluid w-100'
                             alt='Dining Area'
                           />
@@ -205,13 +205,13 @@ const SampleFlat = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/sa/sa-07.jpg'
+                          href='images/gallery/sa/sa-07.webp'
                           data-fancybox='gallery'
                           data-caption='Bedrooms'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/sa/sa-07.jpg'
+                            src='images/gallery/sa/sa-07.webp'
                             className='img-fluid w-100'
                             alt='Bedrooms'
                           />
@@ -231,13 +231,13 @@ const SampleFlat = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/sa/sa-08.jpg'
+                          href='images/gallery/sa/sa-08.webp'
                           data-fancybox='gallery'
                           data-caption='Bedrooms'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/sa/sa-08.jpg'
+                            src='images/gallery/sa/sa-08.webp'
                             className='img-fluid w-100'
                             alt='Bedrooms'
                           />
@@ -257,13 +257,13 @@ const SampleFlat = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/sa/sa-09.jpg'
+                          href='images/gallery/sa/sa-09.webp'
                           data-fancybox='gallery'
                           data-caption='Master Bedroom'
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/sa/sa-09.jpg'
+                            src='images/gallery/sa/sa-09.webp'
                             className='img-fluid w-100'
                             alt='Master Bedroom'
                           />
@@ -285,13 +285,13 @@ const SampleFlat = (props) => {
                       </div>
                       <div className='inner__right'>
                         <a
-                          href='images/gallery/sa/sa-10.jpg'
+                          href='images/gallery/sa/sa-10.webp'
                           data-fancybox='gallery'
                           data-caption=''
                         >
                           <img
                             width='700' height='550'
-                            src='images/gallery/sa/sa-10.jpg'
+                            src='images/gallery/sa/sa-10.webp'
                             className='img-fluid w-100'
                             alt=''
                           />
