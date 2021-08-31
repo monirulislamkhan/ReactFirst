@@ -30,6 +30,7 @@ class MasterPlan extends Component {
                   <img
                     src='/images/sobha-city-master-plan.webp'
                     alt={`Master Plan - ${window.name}`}
+                    title={`Master Plan - ${window.name}`}
                     className='img-fluid'
                     onClick={() =>
                       this.setState({ isOpen: true, photoIndex: 0 })

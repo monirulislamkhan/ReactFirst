@@ -56,7 +56,7 @@ const ConstructionUpdate = (props) => {
                             width='700' height='550'
                             src='images/gallery/cu/tower-a1.webp'
                             className='img-fluid w-100'
-                            alt='Tower A1'
+                            alt='Tower A1' title='Tower A1'
                           />
                         </a>
                       </div>
@@ -81,7 +81,7 @@ const ConstructionUpdate = (props) => {
                             width='700' height='550'
                             src='images/gallery/cu/tower-a2.webp'
                             className='img-fluid w-100'
-                            alt='Tower A2'
+                            alt='Tower A2' title='Tower A2'
                           />
                         </a>
                       </div>
@@ -107,7 +107,7 @@ const ConstructionUpdate = (props) => {
                             width='700' height='550'
                             src='images/gallery/cu/tower-b1.webp'
                             className='img-fluid w-100'
-                            alt='Tower B1'
+                            alt='Tower B1' title='Tower B1'
                           />
                         </a>
                       </div>
@@ -132,7 +132,7 @@ const ConstructionUpdate = (props) => {
                             width='700' height='550'
                             src='images/gallery/cu/tower-b2.webp'
                             className='img-fluid w-100'
-                            alt='Tower B2'
+                            alt='Tower B2' title='Tower B2'
                           />
                         </a>
                       </div>
@@ -157,7 +157,7 @@ const ConstructionUpdate = (props) => {
                             width='700' height='550'
                             src='images/gallery/cu/tower-b3.webp'
                             className='img-fluid w-100'
-                            alt='Tower B3'
+                            alt='Tower B3' title='Tower B3'
                           />
                         </a>
                       </div>
@@ -183,7 +183,7 @@ const ConstructionUpdate = (props) => {
                             width='700' height='550'
                             src='images/gallery/cu/tower-c1.webp'
                             className='img-fluid w-100'
-                            alt='Tower C1'
+                            alt='Tower C1' title='Tower C1'
                           />
                         </a>
                       </div>
@@ -208,7 +208,7 @@ const ConstructionUpdate = (props) => {
                             width='700' height='550'
                             src='images/gallery/cu/tower-c2.webp'
                             className='img-fluid w-100'
-                            alt='Tower C2'
+                            alt='Tower C2' title='Tower C2'
                           />
                         </a>
                       </div>
@@ -233,7 +233,7 @@ const ConstructionUpdate = (props) => {
                             width='700' height='550'
                             src='images/gallery/cu/tower-c3.webp'
                             className='img-fluid w-100'
-                            alt='Tower C3'
+                            alt='Tower C3' title='Tower C3'
                           />
                         </a>
                       </div>
@@ -258,7 +258,7 @@ const ConstructionUpdate = (props) => {
                             width='700' height='550'
                             src='images/gallery/cu/club-oval-1.webp'
                             className='img-fluid w-100'
-                            alt='Club Oval 1'
+                            alt='Club Oval 1' alt='titlelub Oval 1'
                           />
                         </a>
                       </div>
@@ -285,7 +285,7 @@ const ConstructionUpdate = (props) => {
                             width='700' height='550'
                             src='images/gallery/cu/cricket-ground.webp'
                             className='img-fluid w-100'
-                            alt='Cricket Ground'
+                            alt='Cricket Ground' alt='titleket Ground'
                           />
                         </a>
                       </div>
@@ -310,7 +310,7 @@ const ConstructionUpdate = (props) => {
                             width='700' height='550'
                             src='images/gallery/cu/ews.webp'
                             className='img-fluid w-100'
-                            alt='EWS'
+                            alt='title' alt='EWS'
                           />
                         </a>
                       </div>
@@ -335,7 +335,7 @@ const ConstructionUpdate = (props) => {
                             width='700' height='550'
                             src='images/gallery/cu/stp.webp'
                             className='img-fluid w-100'
-                            alt='STP'
+                            alt='title' alt='STP'
                           />
                         </a>
                       </div>

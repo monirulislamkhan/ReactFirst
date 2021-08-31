@@ -33,6 +33,7 @@ const locationMap = (props) => {
                       <img
                         width='331' height='210'
                         alt='2 Bedroom, Type - A, Tower - A1 - A4: 1381 Sq. Ft.'
+                        title='2 Bedroom, Type - A, Tower - A1 - A4: 1381 Sq. Ft.'
                         src='images/floor-plan/2bhk-tower-a1-a4-unit-type-a-1381-sqft.webp'
                         className='img-fluid'
                       />
@@ -54,6 +55,7 @@ const locationMap = (props) => {
                       <img
                         width='331' height='210'
                         alt='3 Bedroom, Type - B, Tower - A1 - A4: 1711 Sq. Ft.'
+                        title='3 Bedroom, Type - B, Tower - A1 - A4: 1711 Sq. Ft.'
                         src='images/floor-plan/3bhk-tower-a1-a4-unit-type-b-1711-sqft.webp'
                         className='img-fluid'
                       />
@@ -71,6 +73,7 @@ const locationMap = (props) => {
                       <img
                         width='331' height='210'
                         alt='3 Bedroom, Type - B, Tower - B1 - B4: 1711 Sq. Ft.'
+                        title='3 Bedroom, Type - B, Tower - B1 - B4: 1711 Sq. Ft.'
                         src='images/floor-plan/3bhk-tower-b1-b4-unit-type-b-1711-sqft.webp'
                         className='img-fluid'
                       />
@@ -88,6 +91,7 @@ const locationMap = (props) => {
                       <img
                         width='331' height='210'
                         alt='3 Bedroom, Type - C, Tower - B1 - B4: 2003 Sq. Ft.'
+                        title='3 Bedroom, Type - C, Tower - B1 - B4: 2003 Sq. Ft.'
                         src='images/floor-plan/3bhk-tower-b1-b4-unit-type-c-2003-sqft.webp'
                         className='img-fluid'
                       />
@@ -105,6 +109,7 @@ const locationMap = (props) => {
                       <img
                         width='331' height='210'
                         alt='3 Bedroom, Type - D, Tower - C1 - C4: 2072 Sq. Ft.'
+                        title='3 Bedroom, Type - D, Tower - C1 - C4: 2072 Sq. Ft.'
                         src='images/floor-plan/3bhk-tower-c1-c4-unit-type-d-2072-sqft.webp'
                         className='img-fluid'
                       />
@@ -122,6 +127,7 @@ const locationMap = (props) => {
                       <img
                         width='331' height='210'
                         alt='3 Bedroom, Type - e, Tower - C1 - C4: 2343 Sq. Ft.'
+                        title='3 Bedroom, Type - e, Tower - C1 - C4: 2343 Sq. Ft.'
                         src='images/floor-plan/3bhk-tower-c1-c4-unit-type-d-2072-sqft.webp'
                         className='img-fluid'
                       />

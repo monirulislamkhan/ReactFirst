@@ -58,8 +58,8 @@ const Footer = () => {
       </div>
       <div className="display_popup">
         <ul>
-          <li><Link to="tel:+911149500008"><i className="fas fa-phone-alt"></i></Link></li>
-          <li><Link to="https://api.whatsapp.com/send?phone=+919999428963&amp;text=I'm%20interested%20in%20Sobha%20City%20Gurgaon%20Sector-108" rel="nofollow"><img src="images/whatsapp.svg" alt="Whatsapp" width='30' height="30" /></Link></li>
+          <li><a href="tel:+911149500008"><i className="fas fa-phone-alt"></i></a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=+919999428963&amp;text=I'm%20interested%20in%20Sobha%20City%20Gurgaon%20Sector-108" rel="nofollow"><img src="images/whatsapp.svg" alt="Whatsapp" width='30' height="30" /></a></li>
         </ul>
       </div>
       <div className="modal fade" id='ftrForm' tabIndex="-1" aria-hidden="true">

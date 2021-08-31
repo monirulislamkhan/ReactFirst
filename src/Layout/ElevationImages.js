@@ -32,7 +32,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-01.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-01'
+                        alt='sobha-city-ei-01' title='sobha-city-ei-01'
                       />
                     </a>
                   </figure>
@@ -45,7 +45,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-02.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-02'
+                        alt='sobha-city-ei-02' title='sobha-city-ei-02'
                       />
                     </a>
                   </figure>
@@ -58,7 +58,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-03.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-03'
+                        alt='sobha-city-ei-03' title='sobha-city-ei-03'
                       />
                     </a>
                   </figure>
@@ -71,7 +71,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-04.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-04'
+                        alt='sobha-city-ei-04' title='sobha-city-ei-04'
                       />
                     </a>
                   </figure>
@@ -84,7 +84,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-05.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-05'
+                        alt='sobha-city-ei-05' title='sobha-city-ei-05'
                       />
                     </a>
                   </figure>
@@ -97,7 +97,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-06.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-06'
+                        alt='sobha-city-ei-06' title='sobha-city-ei-06'
                       />
                     </a>
                   </figure>
@@ -110,7 +110,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-07.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-07'
+                        alt='sobha-city-ei-07' title='sobha-city-ei-07'
                       />
                     </a>
                   </figure>
@@ -123,7 +123,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-08.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-08'
+                        alt='sobha-city-ei-08' title='sobha-city-ei-08'
                       />
                     </a>
                   </figure>
@@ -136,7 +136,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-09.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-09'
+                        alt='sobha-city-ei-09' title='sobha-city-ei-09'
                       />
                     </a>
                   </figure>
@@ -149,7 +149,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-10.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-10'
+                        alt='sobha-city-ei-10' title='sobha-city-ei-10'
                       />
                     </a>
                   </figure>
@@ -162,7 +162,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-11.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-11'
+                        alt='sobha-city-ei-11' title='sobha-city-ei-11'
                       />
                     </a>
                   </figure>
@@ -175,7 +175,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-12.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-12'
+                        alt='sobha-city-ei-12' title='sobha-city-ei-12'
                       />
                     </a>
                   </figure>
@@ -188,7 +188,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-13.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-13'
+                        alt='sobha-city-ei-13' title='sobha-city-ei-13'
                       />
                     </a>
                   </figure>
@@ -201,7 +201,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-14.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-14'
+                        alt='sobha-city-ei-14' title='sobha-city-ei-14'
                       />
                     </a>
                   </figure>
@@ -214,7 +214,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-15.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-15'
+                        alt='sobha-city-ei-15' title='sobha-city-ei-15'
                       />
                     </a>
                   </figure>
@@ -227,7 +227,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-16.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-16'
+                        alt='sobha-city-ei-16' title='sobha-city-ei-16'
                       />
                     </a>
                   </figure>
@@ -240,7 +240,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-17.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-17'
+                        alt='sobha-city-ei-17' title='sobha-city-ei-17'
                       />
                     </a>
                   </figure>
@@ -253,7 +253,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-18.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-18'
+                        alt='sobha-city-ei-18' title='sobha-city-ei-18'
                       />
                     </a>
                   </figure>
@@ -266,7 +266,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-19.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-19'
+                        alt='sobha-city-ei-19' title='sobha-city-ei-19'
                       />
                     </a>
                   </figure>
@@ -279,7 +279,7 @@ const locationMap = (props) => {
                         width='700' height='550'
                         src='images/gallery/ei/ei-20.webp'
                         className='img-fluid'
-                        alt='sobha-city-ei-20'
+                        alt='sobha-city-ei-20' title='sobha-city-ei-20'
                       />
                     </a>
                   </figure>

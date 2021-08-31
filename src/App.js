@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 import {
   Home,
@@ -16,6 +17,9 @@ import {
   WhyInvest,
   NotFoundPage,
 } from './Layout/AllPages';
+
+ReactGA.initialize('UA-69690963-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
   return (

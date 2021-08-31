@@ -55,7 +55,7 @@ const Home = (props) => {
     },
   ];
 
-  axios.get(`http://tatahousingnewproject.com/admin/wp-json/v1/GetHomePageBlog`).then(response => {
+  axios.get(`http://www.sobhacitygurgaon.org.in/blog/wp-json/v1/GetHomePageBlog`).then(response => {
     document.getElementById('blog-sec').innerHTML = response.data;
   });
 
@@ -76,7 +76,7 @@ const Home = (props) => {
         <div className='container'>
           <div className='row mb-5'>
             <figure className='col-lg-5'>
-              <img src='images/overview-01.webp' width='600' height='550' alt='Overview' className='img-fluid' />
+              <img src='images/overview-01.webp' width='600' height='550' alt='Overview' title='Overview' className='img-fluid' />
             </figure>
             <div className='col-lg-7'>
               <div className='des_heading text-start'>
@@ -115,6 +115,7 @@ const Home = (props) => {
                 width='418' height='334'
                 src='images/overview-02.webp'
                 alt={window.name}
+                title={window.name}
                 className='img-fluid'
               />
             </figure>
@@ -285,16 +286,18 @@ const Home = (props) => {
                 width='590' height='330'
                 className='img-fluid'
                 src='images/clubhouses-image1.webp'
-                alt=''
+                alt={window.name}
+                title={window.name}
               />
               <figcaption>Clubhouse Oval-1</figcaption>
             </figure>
             <figure className='col-lg-6 col-md-6 mb-5'>
               <img
                 width='590' height='330'
-                className='img-fluid'
+                className='img-fluid w-100'
                 src='images/clubhouses-image2.webp'
-                alt=''
+                alt={`${window.name} Sector 108`}
+                title={`${window.name} Sector 108`}
               />
               <figcaption>Clubhouse Oval-2</figcaption>
             </figure>
@@ -331,7 +334,7 @@ const Home = (props) => {
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
               <div className='ameni_item'>
-                <i className='sym_community-hall'></i> Multi-Purpose Hall
+                <i className="fas fa-theater-masks"></i> Multi-Purpose Hall
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-6'>
@@ -393,8 +396,9 @@ const Home = (props) => {
                 <img
                   width='404' height='303'
                   src='images/constructions-thumb.webp'
-                  className='img-fluid'
+                  className='img-fluid w-100'
                   alt={`Construction update of ${window.name}`}
+                  title={`Construction update of ${window.name}`}
                 />
                 <div className='inner_det'>
                   <div className='h5 mb-3 w-50'>
@@ -413,8 +417,9 @@ const Home = (props) => {
                 <img
                   width='404' height='303'
                   src='images/sample-flat-thumb.webp'
-                  className='img-fluid'
+                  className='img-fluid w-100'
                   alt={`Sample flats of ${window.name}`}
+                  title={`Sample flats of ${window.name}`}
                 />
                 <div className='inner_det'>
                   <div className='h5 mb-3 w-50'>
@@ -439,6 +444,7 @@ const Home = (props) => {
               src='images/sobha-city-gurgaon-location-advantage.webp'
               className='img-fluid'
               alt='Best Location for Seamless Connectivity'
+              title='Best Location for Seamless Connectivity'
             />
           </figure>
           <div className='col-lg-6'>
@@ -721,6 +727,7 @@ const Home = (props) => {
                       width='550' height='200'
                       src='images/property-in-dwarka-ads.webp'
                       alt='GET YOUR FREE EUROPE TRIP ON THE SPOT'
+                      title='GET YOUR FREE EUROPE TRIP ON THE SPOT'
                       className='img-fluid w-100'
                     />
                   </figure>
@@ -760,20 +767,9 @@ const Home = (props) => {
                 with the best Real Estate side!
               </p>
             </div>
-            <div className='col-lg-12'>
-              <div className='blog' id="blog-sec">
+            <div className='col-lg-12' id="blog-sec">
 
-                
-                
-              </div>
-              <div className='text-center mt-4'>
-                <Link
-                  to='blog'
-                  className='btn btn-outline-primary'
-                >
-                  Read More Blogs <i className='sym_arrow-right'></i>
-                </Link>
-              </div>
+
             </div>
           </div>
         </div>

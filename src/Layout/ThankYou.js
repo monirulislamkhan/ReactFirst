@@ -1,11 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Header from '../Component/Header';
+import Footer from '../Component/Footer';
 function ThankYou() {
   return (
     <>
       <Helmet>
         <title>Thank You</title>
       </Helmet>
+      <Header />
       <section className="dis_con">
         <div className="container">
           <div className="row">
@@ -18,6 +21,7 @@ function ThankYou() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

@@ -12,3 +12,16 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+const injectGA = () => {
+  if (typeof window == 'undefined') {
+    return;
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-69690963-1');
+};
+<script>{injectGA()}</script>

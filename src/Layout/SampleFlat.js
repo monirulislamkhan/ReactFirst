@@ -57,6 +57,7 @@ const SampleFlat = (props) => {
                             src='images/gallery/sa/sa-01.webp'
                             className='img-fluid w-100'
                             alt='Living Room'
+                            title='Living Room'
                           />
                         </a>
                       </div>
@@ -83,6 +84,7 @@ const SampleFlat = (props) => {
                             src='images/gallery/sa/sa-02.webp'
                             className='img-fluid w-100'
                             alt='Living Room'
+                            title='Living Room'
                           />
                         </a>
                       </div>
@@ -108,6 +110,7 @@ const SampleFlat = (props) => {
                             src='images/gallery/sa/sa-03.webp'
                             className='img-fluid w-100'
                             alt='Living Room'
+                            title='Living Room'
                           />
                         </a>
                       </div>
@@ -135,6 +138,7 @@ const SampleFlat = (props) => {
                             src='images/gallery/sa/sa-04.webp'
                             className='img-fluid w-100'
                             alt='Living Room'
+                            title='Living Room'
                           />
                         </a>
                       </div>
@@ -162,6 +166,7 @@ const SampleFlat = (props) => {
                             src='images/gallery/sa/sa-05.webp'
                             className='img-fluid w-100'
                             alt='Dining Area'
+                            title='Dining Area'
                           />
                         </a>
                       </div>
@@ -188,6 +193,7 @@ const SampleFlat = (props) => {
                             src='images/gallery/sa/sa-06.webp'
                             className='img-fluid w-100'
                             alt='Dining Area'
+                            title='Dining Area'
                           />
                         </a>
                       </div>
@@ -214,6 +220,7 @@ const SampleFlat = (props) => {
                             src='images/gallery/sa/sa-07.webp'
                             className='img-fluid w-100'
                             alt='Bedrooms'
+                            title='Bedrooms'
                           />
                         </a>
                       </div>
@@ -240,6 +247,7 @@ const SampleFlat = (props) => {
                             src='images/gallery/sa/sa-08.webp'
                             className='img-fluid w-100'
                             alt='Bedrooms'
+                            title='Bedrooms'
                           />
                         </a>
                       </div>
@@ -266,6 +274,7 @@ const SampleFlat = (props) => {
                             src='images/gallery/sa/sa-09.webp'
                             className='img-fluid w-100'
                             alt='Master Bedroom'
+                            title='Master Bedroom'
                           />
                         </a>
                       </div>
@@ -294,6 +303,7 @@ const SampleFlat = (props) => {
                             src='images/gallery/sa/sa-10.webp'
                             className='img-fluid w-100'
                             alt=''
+                            title=''
                           />
                         </a>
                       </div>

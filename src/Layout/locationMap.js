@@ -21,7 +21,7 @@ const locationMap = (props) => {
             <div className='col-md-12'>
               <h1>{`Location Map -  ${window.name} Sector 108`}</h1>
               <a href='images/sobha-city-location-map.webp' data-fancybox='gallery' data-caption={`Location Map of ${window.name}`}>
-                <img width='1400' height='700' src='images/sobha-city-location-map.webp' className='img-fluid' alt={`Location Map of ${window.name}`} />
+                <img width='1400' height='700' src='images/sobha-city-location-map.webp' className='img-fluid' alt={`Location Map of ${window.name}`} title={`Location Map of ${window.name}`} />
               </a>
             </div>
           </div>

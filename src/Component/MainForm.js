@@ -6,7 +6,7 @@ let nameInput;
 let emailInput;
 let countryInput;
 let phoneInput;
-let ApiUrl = 'http://tatahousingnewproject.com/admin/wp-json/v1/';
+let ApiUrl = 'http://www.sobhacitygurgaon.org.in/blog/wp-json/v1/';
 
 const onSubmitHandler = (e)=>{  
   e.preventDefault();

@@ -5,13 +5,13 @@ export const DecisionCorner = () => {
   return (
     <>
       <section className="callb">
-        <figure><img src="images/decision-corner.svg" width='406' height='200' className="img-fluid" alt="DECISION CORNER" /></figure>
+        <figure><img src="images/decision-corner.svg" width='406' height='200' className="img-fluid" alt="DECISION CORNER"  title="DECISION CORNER" /></figure>
         <div className="h3 font-weight-bold">DECISION CORNER</div>
         <div className="h4">Do You Want a deal of Investment? Just let us know!!</div>
         <div className="callb__left">
           <div className="callb__left__one">
             <div className="h6 font-weight-bold">Let Us Serve You Beyond</div>
-            <button className="btn btn-primary">Ask Any Question</button>
+            <a href="javascript:void(Tawk_API.toggle())" className="btn btn-primary">Ask Any Question</a>
           </div>
           <div className="callb__left__two">
             <div className="h6 font-weight-bold">Talk For Right Investment</div>
@@ -31,7 +31,7 @@ export const DecisionCorner = () => {
                 <ul>
                   <li className="w-100">Have you been searching for the right property for your investment?</li>
                   <li className="w-100">Buying property takes strenuous efforts to find out the best property.</li>
-                  <li className="w-100">Relax! {window.name} Will serve you unbiased advice on all leading real estate properties and you enjoy the best property assistance.</li>
+                  <li className="w-100">Relax! {window.name} will serve you unbiased advice on all leading real estate properties and you enjoy the best property assistance.</li>
                 </ul>
                 <div className="sch_form">
                   <MainForm />

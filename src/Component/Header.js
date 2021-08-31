@@ -8,7 +8,7 @@ const Header = (props) => {
     <nav className='navbar navbar-expand-lg fixed-top navbar-dark bg-dark'>
     <ScrollButton />
       <Link className='navbar-brand' to='/'>
-        <img src='/images/logo.svg' alt={window.name} height='50' width='153' />
+        <img src='/images/logo.svg' alt={`${window.name}`} title={`${window.name}`} height='50' width='153' />
       </Link>
       <button
         className='navbar-toggler'
