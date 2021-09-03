@@ -6,7 +6,7 @@ let nameInput;
 let emailInput;
 let countryInput;
 let phoneInput;
-let ApiUrl = 'http://www.sobhacitygurgaon.org.in/blog/wp-json/v1/';
+let ApiUrl = 'http://www.tatahousingnewproject.com/admin/wp-json/v1/';
 
 const onSubmitHandler = (e)=>{  
   e.preventDefault();
@@ -52,11 +52,11 @@ function MainForm() {
 
 
   const [articles, setArticles] = useState([]);
-  useEffect(() => {
+  /*useEffect(() => {
   fetch(ApiUrl+"GetCountry")
     .then(res => res.json())
     .then(result => setArticles(result))
-  }, []);  
+  }, []);*/  
   return (
     <>
       <form role="form" name="form1" method="post" className="contactform" onSubmit={(e)=>{onSubmitHandler(e)}}>
@@ -74,9 +74,7 @@ function MainForm() {
           <label htmlFor="Select">Country</label>
           <select className="form-select" id="country" name="country" aria-label=" label select example" ref={ el => countryInput = el } onChange={(e)=>{ onChangeHandler("country",e.target.value)}}>
             <option value="">Select Country</option>
-              {articles.map((country) => (
-                <option value={country.id} key={country.id}>{country.name}</option>
-              ))}
+              
           </select>
         </div>
 

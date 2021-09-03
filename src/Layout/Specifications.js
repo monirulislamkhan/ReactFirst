@@ -6,13 +6,6 @@ import { DecisionCorner } from '../Component/DecisionCorner';
 
 
 const Home = (props) => {
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
   return (
     <>
       <Helmet>

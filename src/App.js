@@ -50,8 +50,8 @@ const App = () => {
           <Route exact path='/price-list.html' component={PriceList} />
           <Route exact path='/specifications.html' component={Specifications} />
           <Route exact path='/' component={Home} />
-          <Route component={NotFoundPage} />
         </Switch>
+          {/* <Route component={NotFoundPage} /> */}
       </Router>
     </>
   );

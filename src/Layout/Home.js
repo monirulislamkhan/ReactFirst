@@ -55,7 +55,7 @@ const Home = (props) => {
     },
   ];
 
-  axios.get(`http://www.sobhacitygurgaon.org.in/blog/wp-json/v1/GetHomePageBlog`).then(response => {
+  axios.get(`http://www.tatahousingnewproject.com/admin/wp-json/v1/GetHomePageBlog`).then(response => {
     document.getElementById('blog-sec').innerHTML = response.data;
   });
 
